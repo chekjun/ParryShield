@@ -59,7 +59,8 @@ if (key_shoot and
 	!isDashing and
 	!isParrying and
 	!isBlocking and
-	shootCooldown == 0 and distance_to_point(mouse_x, mouse_y) > round(sqrt(16 * 16 + 16 * 16))) {
+	shootCooldown == 0 and
+	distance_to_point(mouse_x, mouse_y) > round(sqrt(32 * 32 + 32 * 32))) {
 	show_debug_message("Shoot Triggered!");
 	isShooting = true;
 	shootCooldown = 50;
@@ -105,7 +106,7 @@ if (key_shield) {
 	isBlocking = false;
 }
 
-if (key_shield and !instance_exists(obj_shield)) {
+if (key_shield and (parryDuration > 0 or MP > 0) and !instance_exists(obj_shield)) {
 	instance_create_depth(
 		x + lengthdir_x(16, point_direction(x, y, mouse_x, mouse_y)),
 		y + lengthdir_y(16, point_direction(x, y, mouse_x, mouse_y)),
