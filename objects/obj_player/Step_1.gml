@@ -35,13 +35,15 @@ if (dashDuration > 0) {
 		}
 		dashX = 0;
 	}
-	x = x + dashX;
+
 	if (place_meeting(x, y + dashY, obj_wall)) {
 		while (!place_meeting(x, y + sign(dashY), obj_wall)) {
 			y = y + sign(dashY);
 		}
 		dashY = 0;
 	}
+	
+	x = x + dashX;
 	y = y + dashY;
 } else {
 	isDashing = false;
