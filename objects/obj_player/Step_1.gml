@@ -12,16 +12,6 @@ key_shoot = mouse_check_button(mb_left);
 key_parry = mouse_check_button_pressed(mb_right);
 key_shield = mouse_check_button(mb_right);
 
-if (isDashing or isParrying) {
-	key_up = 0;
-	key_left = 0;
-	key_down = 0;
-	key_right = 0;
-	key_shoot = 0;
-	key_parry = 0;
-	key_shield = 0;
-}
-
 // Dash Cooldown
 if (dashCooldown > 0) {
 	--dashCooldown;
@@ -69,4 +59,15 @@ if (parryDuration > 0) {
 	--parryDuration;
 } else {
 	isParrying = false;
+}
+
+// isBusy Check
+if (isDashing or isParrying) {
+	key_up = 0;
+	key_left = 0;
+	key_down = 0;
+	key_right = 0;
+	key_shoot = 0;
+	key_parry = 0;
+	key_shield = 0;
 }

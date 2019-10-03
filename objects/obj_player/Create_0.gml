@@ -17,7 +17,7 @@ isShooting = false;
 // Timers
 dashCooldown = 0;
 dashDuration = 0;
-dashSpeed = 2.5;
+dashSpeed = 3;
 dashX = 0;
 dashY = 0;
 
