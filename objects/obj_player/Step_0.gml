@@ -79,14 +79,6 @@ if (key_parry) {
 		isParrying = true;
 		parryCooldown = 100;
 		parryDuration = 25;
-		if (key_shield and (parryDuration > 0 or MP > 0) and !instance_exists(obj_shield)) {
-			instance_create_depth(
-			x + lengthdir_x(16, point_direction(x, y, mouse_x, mouse_y)),
-			y + lengthdir_y(16, point_direction(x, y, mouse_x, mouse_y)),
-			depth,
-			obj_parry
-			); 	
-		}
 		
 		// Parry Animation
 		if (lookingAngle > 45 and lookingAngle < 135) {
@@ -104,6 +96,13 @@ if (key_parry) {
 		} else {
 			show_debug_message(lookingAngle);
 		}
+		
+		instance_create_depth(
+			x + lengthdir_x(24, point_direction(x, y, mouse_x, mouse_y)),
+			y + lengthdir_y(24, point_direction(x, y, mouse_x, mouse_y)),
+			depth,
+			obj_parry
+			);
 	}
 }
 
@@ -112,8 +111,8 @@ if (key_shield) {
 	if (parryDuration <= 0 and MP > 0 and !instance_exists(obj_shield)) {
 		isBlocking = true;
 		instance_create_depth(
-			x + lengthdir_x(16, point_direction(x, y, mouse_x, mouse_y)),
-			y + lengthdir_y(16, point_direction(x, y, mouse_x, mouse_y)),
+			x + lengthdir_x(24, point_direction(x, y, mouse_x, mouse_y)),
+			y + lengthdir_y(24, point_direction(x, y, mouse_x, mouse_y)),
 			depth,
 			obj_shield
 			); 		
