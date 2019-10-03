@@ -60,16 +60,16 @@ if (key_shoot and
 	!isParrying and
 	!isBlocking and
 	shootCooldown == 0 and
-	distance_to_point(mouse_x, mouse_y) > round(sqrt(32 * 32 + 32 * 32))) {
+	distance_to_point(mouse_x, mouse_y) > round(sqrt(16 * 16 + 16 * 16))) {
 	show_debug_message("Shoot Triggered!");
 	isShooting = true;
 	shootCooldown = 50;
 	shootDuration = 50;
 	instance_create_depth(
-		x + lengthdir_x(32, lookingAngle),
-		y + lengthdir_y(32, lookingAngle),
+		x + lengthdir_x(16, lookingAngle),
+		y + lengthdir_y(16, lookingAngle),
 		depth,
-		obj_bullet);
+		obj_player_bullet);
 }
 
 // Parry
@@ -78,7 +78,15 @@ if (key_parry) {
 		show_debug_message("Parry Triggered!");
 		isParrying = true;
 		parryCooldown = 100;
-		parryDuration = 50;
+		parryDuration = 25;
+		if (key_shield and (parryDuration > 0 or MP > 0) and !instance_exists(obj_shield)) {
+			instance_create_depth(
+			x + lengthdir_x(16, point_direction(x, y, mouse_x, mouse_y)),
+			y + lengthdir_y(16, point_direction(x, y, mouse_x, mouse_y)),
+			depth,
+			obj_parry
+			); 	
+		}
 		
 		// Parry Animation
 		if (lookingAngle > 45 and lookingAngle < 135) {
@@ -106,6 +114,7 @@ if (key_shield) {
 	isBlocking = false;
 }
 
+/*
 if (key_shield and (parryDuration > 0 or MP > 0) and !instance_exists(obj_shield)) {
 	instance_create_depth(
 		x + lengthdir_x(16, point_direction(x, y, mouse_x, mouse_y)),
@@ -114,3 +123,4 @@ if (key_shield and (parryDuration > 0 or MP > 0) and !instance_exists(obj_shield
 		obj_shield
 		); 		
 }
+*/

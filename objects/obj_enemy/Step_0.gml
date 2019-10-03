@@ -8,7 +8,7 @@ if (shootCooldown == 0 and instance_exists(obj_player) and !collision_line(x, y,
 		x + lengthdir_x(40, point_direction(x, y, obj_player.x, obj_player.y)),
 		y + lengthdir_y(40, point_direction(x, y, obj_player.x, obj_player.y)),
 		depth,
-		obj_bullet);
+		obj_enemy_bullet);
 	bullet.direction = point_direction(bullet.x, bullet.y, obj_player.x, obj_player.y);
 	bullet.speed = 5;
 }

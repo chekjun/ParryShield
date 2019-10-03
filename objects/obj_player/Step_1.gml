@@ -12,7 +12,7 @@ key_shoot = mouse_check_button(mb_left);
 key_parry = mouse_check_button_pressed(mb_right);
 key_shield = mouse_check_button(mb_right);
 
-if (isDashing or isParrying or isShooting) {
+if (isDashing or isParrying) {
 	key_up = 0;
 	key_left = 0;
 	key_down = 0;
