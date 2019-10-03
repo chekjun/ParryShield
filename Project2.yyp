@@ -79,27 +79,11 @@
             }
         },
         {
-            "Key": "26f18fdd-0fa6-4265-ae89-972c5632df2d",
-            "Value": {
-                "id": "811ddd6a-f307-44b0-810b-ab2c374e0708",
-                "resourcePath": "objects\\obj_player_camera\\obj_player_camera.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2b60973c-d9c2-4929-9427-932d148f83a6",
             "Value": {
                 "id": "9d84337b-83e2-45e1-ba5a-ccdce2a4f676",
                 "resourcePath": "views\\2b60973c-d9c2-4929-9427-932d148f83a6.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "2bfa5aaf-97ad-4101-9e58-57353142408a",
-            "Value": {
-                "id": "121e4a08-4159-4c53-ba56-ab1e117fd915",
-                "resourcePath": "sprites\\spr_camera\\spr_camera.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

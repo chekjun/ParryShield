@@ -15,4 +15,4 @@ WASD to walk.
 SPACEBAR to dash.  
 LEFT_CLICK to shoot.  
 RIGHT_CLICK to parry.  
-Keep holding RIGHT_CLICK to block.  
+RIGHT_CLICK (hold) to block.  

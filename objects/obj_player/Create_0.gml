@@ -3,9 +3,9 @@ HP = 100;
 MP = 100;
 
 // Movement
-moveSpeed = 2;
-horizontalSpeed = 2;
-verticalSpeed = 2;
+moveSpeed = 2.5;
+horizontalSpeed = 2.5;
+verticalSpeed = 2.5;
 
 // Boolean
 isDead = false;

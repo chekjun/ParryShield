@@ -44,8 +44,8 @@ y = y + verticalSpeed;
 if (key_dash and dashCooldown == 0) {
 	show_debug_message("Dash Triggered!");
 	isDashing = true;
-	dashCooldown = 200;
-	dashDuration = 20;
+	dashCooldown = 250;
+	dashDuration = 30;
 	dashX = horizontalSpeed * dashSpeed;
 	dashY = verticalSpeed * dashSpeed;
 	if (dashX != 0 and dashY != 0) {
