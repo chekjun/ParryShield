@@ -109,18 +109,16 @@ if (key_parry) {
 
 // Shield
 if (key_shield) {
-	isBlocking = true;
+	if (parryDuration <= 0 and MP > 0 and !instance_exists(obj_shield)) {
+		isBlocking = true;
+		instance_create_depth(
+			x + lengthdir_x(16, point_direction(x, y, mouse_x, mouse_y)),
+			y + lengthdir_y(16, point_direction(x, y, mouse_x, mouse_y)),
+			depth,
+			obj_shield
+			); 		
+	}
 } else {
 	isBlocking = false;
 }
 
-/*
-if (key_shield and (parryDuration > 0 or MP > 0) and !instance_exists(obj_shield)) {
-	instance_create_depth(
-		x + lengthdir_x(16, point_direction(x, y, mouse_x, mouse_y)),
-		y + lengthdir_y(16, point_direction(x, y, mouse_x, mouse_y)),
-		depth,
-		obj_shield
-		); 		
-}
-*/
