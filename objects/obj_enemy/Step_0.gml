@@ -2,7 +2,7 @@ if (isDead) {
 	exit;
 }
 
-if (shootCooldown == 0 and instance_exists(obj_player) and !collision_line(x, y, obj_player.x, obj_player.y, obj_wall, true, true) and distance_to_object(obj_player) < 300) {
+if (shootCooldown == 0 and instance_exists(obj_player) and !collision_line(x, y, obj_player.x, obj_player.y, obj_wall, true, true) and distance_to_object(obj_player) < 100) {
 	shootCooldown = 250;
 	var bullet = instance_create_depth(
 		x + lengthdir_x(16, point_direction(x, y, obj_player.x, obj_player.y)),

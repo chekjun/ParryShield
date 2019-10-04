@@ -1,5 +1,5 @@
 // Stats
-HP = 50;
+HP = 20;
 isDead = false;
 
 shootCooldown = 0;

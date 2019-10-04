@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "room_test",
     "id": "d3ad50a3-5297-407f-be6c-81d4eb8f4c8d",
     "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
@@ -216,7 +216,7 @@
     },
     "roomSettings":     {
         "id": "31ce450a-70b6-4b10-b14f-63b292fe6f0a",
-        "Height": 1024,
+        "Height": 1280,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
         "persistent": false,
@@ -225,7 +225,7 @@
     },
     "mvc": "1.0",
     "views": [
-{"id": "0b7d61dd-3a67-4a76-83c6-c30fe8a980b5","hborder": 640,"hport": 720,"hspeed": 5,"hview": 720,"inherit": false,"modelName": "GMRView","objId": "bd2b538c-bfb4-4995-94d7-5189e9941684","mvc": "1.0","vborder": 360,"visible": false,"vspeed": 5,"wport": 1280,"wview": 1280,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
+{"id": "0b7d61dd-3a67-4a76-83c6-c30fe8a980b5","hborder": 200,"hport": 540,"hspeed": 3,"hview": 270,"inherit": false,"modelName": "GMRView","objId": "bd2b538c-bfb4-4995-94d7-5189e9941684","mvc": "1.0","vborder": 100,"visible": true,"vspeed": 3,"wport": 960,"wview": 480,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "ab141b98-623d-4550-9984-64fa174d0239","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "84f35ea2-6fa5-415d-8126-6c02dd9d3872","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "39666f8c-afaa-444d-86b3-ff7320c63145","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
@@ -238,7 +238,7 @@
         "id": "e7186839-9083-45ec-9ee3-4dc76a08db7f",
         "clearDisplayBuffer": false,
         "clearViewBackground": false,
-        "enableViews": false,
+        "enableViews": true,
         "inheritViewSettings": false,
         "modelName": "GMRoomViewSettings",
         "mvc": "1.0"
