@@ -6,5 +6,5 @@ if (player.parryDurationTimer == 0) {
 }
 
 x = player.x + lengthdir_x(24, point_direction(player.x, player.y, mouse_x, mouse_y));
-y = player.x + lengthdir_y(24, point_direction(player.x, player.y, mouse_x, mouse_y));
+y = player.y + lengthdir_y(24, point_direction(player.x, player.y, mouse_x, mouse_y));
 image_angle = point_direction(player.x, player.y, mouse_x, mouse_y);
