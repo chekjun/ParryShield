@@ -1,4 +1,4 @@
-// Calculate Player Movement
+// Calculate Player Walking
 hspeed = (key_right - key_left) * moveSpeed;
 vspeed = (key_down - key_up) * moveSpeed;
 
