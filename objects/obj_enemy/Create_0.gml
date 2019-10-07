@@ -2,5 +2,8 @@
 HP = 20;
 isDead = false;
 
-shootCooldown = 0;
-detectCooldown = 0;
+shootCooldown = 250;
+detectCooldown = 250;
+
+shootCooldownTimer = 0;
+detectCooldownTimer = 0;

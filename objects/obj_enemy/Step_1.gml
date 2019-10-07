@@ -2,6 +2,6 @@ if (isDead) {
 	exit;
 }
 
-if (shootCooldown > 0) {
-	--shootCooldown;
+if (shootCooldownTimer > 0) {
+	--shootCooldownTimer;
 }

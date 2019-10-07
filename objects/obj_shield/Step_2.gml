@@ -1,4 +1,4 @@
-if (obj_player.key_shield == 0 or obj_player.MP <= 0) {
+if (obj_player.key_shield == 0 or obj_player.energy <= 0) {
 	show_debug_message("Shield Retracted!");
 	instance_destroy();
 }

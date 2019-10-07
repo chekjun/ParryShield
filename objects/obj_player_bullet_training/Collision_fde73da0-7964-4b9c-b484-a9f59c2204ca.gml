@@ -1,2 +1,2 @@
 instance_destroy();
-health -= 10;
+other.HP -= 10;

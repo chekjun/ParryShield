@@ -1,28 +1,30 @@
 // Stats
-HP = 100;
-MP = 100;
+health = 100;
+energy = 100;
 
 // Movement
 moveSpeed = 2.5;
-horizontalSpeed = 2.5;
-verticalSpeed = 2.5;
+dashSpeed = 10;
 
 // Boolean
 isDead = false;
 isDashing = false;
+isShooting = false;
 isParrying = false;
 isBlocking = false;
-isShooting = false;
 
-// Timers
-dashCooldown = 0;
-dashDuration = 0;
-dashSpeed = 3;
-dashX = 0;
-dashY = 0;
+// Cooldown
+dashCooldown = 250;
+dashDuration = 30;
+shootCooldown = 50;
+shootDuration = 10;
+parryCooldown = 100;
+parryDuration = 25;
 
-shootCooldown = 0;
-shootDuration = 0;
-
-parryCooldown = 0;
-parryDuration = 0;
+// Timer
+dashCooldownTimer = 0;
+dashDurationTimer = 0;
+shootCooldownTimer = 0;
+shootDurationTimer = 0;
+parryCooldownTimer = 0;
+parryDurationTimer = 0;

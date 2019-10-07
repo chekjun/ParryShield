@@ -1,4 +1,4 @@
-if (obj_player.parryDuration == 0) {
+if (obj_player.parryDurationTimer == 0) {
 	show_debug_message("Parry Over!");
 	instance_destroy();
 }
