@@ -3,22 +3,26 @@ if (isDead) {
 }
 
 scr_cooldown();
+
+if (isDashing) {
+	exit;
+}
+
 scr_get_player_input();
 
-if (!isDashing and !isParrying) {
+if (!isParrying) {
 	scr_walk();
 	scr_dash();
 }
 
-
-if (!isDashing and !isShooting) {
+if (!isShooting) {
 	scr_shoot();
 }
 
-if (!isDashing and !isParrying) {
+if (!isParrying) {
 	scr_parry();
 }
 
-if (!isDashing and !isParrying) {
+if (!isParrying) {
 	scr_block();
 }

@@ -5,14 +5,10 @@ if (isDead) {
 	exit;
 }
 
-if (detectCooldownTimer == 0 and shootCooldownTimer == 0) {
-	var playerDirection = point_direction(x, y, obj_player_parry_only.x, obj_player_parry_only.y)
-	var bullet = instance_create_depth(
-		x + lengthdir_x(16, playerDirection),
-		y + lengthdir_y(16, playerDirection),
-		depth,
-		obj_enemy_bullet);
-	bullet.direction = point_direction(bullet.x, bullet.y, obj_player_parry_only.x, obj_player_parry_only.y);
-	bullet.speed = 2;
+if (shootCooldownTimer == 0) {
+	if (instance_exists(obj_player_block_only) and obj_player_block_only.energy <= 0) {
+		exit;
+	}
+	instance_create_depth(x, y, depth, obj_enemy_bullet_training);
 	shootCooldownTimer = shootCooldown;
 }

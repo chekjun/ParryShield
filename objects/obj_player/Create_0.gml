@@ -4,7 +4,7 @@ energy = 100;
 
 // Movement
 moveSpeed = 2.5;
-dashSpeed = 10;
+dashSpeed = 7.5;
 
 // Boolean
 isDead = false;
@@ -15,7 +15,7 @@ isBlocking = false;
 
 // Cooldown
 dashCooldown = 250;
-dashDuration = 30;
+dashDuration = 25;
 shootCooldown = 50;
 shootDuration = 10;
 parryCooldown = 100;

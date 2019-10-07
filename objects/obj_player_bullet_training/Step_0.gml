@@ -1,3 +1,7 @@
+if (numberOfBounces == -1) {
+	instance_destroy();
+}
+
 // Horizontal Collision with Wall
 if (place_meeting(x + hspeed, y, obj_wall)) {
 	--numberOfBounces;

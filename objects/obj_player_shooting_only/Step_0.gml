@@ -2,11 +2,9 @@ if (shootCooldownTimer > 0) {
 	--shootCooldownTimer;
 }
 
-if (shootDurationTimer) {
-	--shootDurationTimer;
-} else {
-	isShooting = false;
-}
-
 scr_get_player_input();
-scr_shoot();
+
+if (key_shoot and shootCooldownTimer == 0) {
+	instance_create_depth(x, y, depth, obj_player_bullet_training);
+	shootCooldownTimer = shootCooldown;
+}

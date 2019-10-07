@@ -591,14 +591,6 @@
             }
         },
         {
-            "Key": "dbdbfdc6-7ac2-4506-a749-cd83f15c4444",
-            "Value": {
-                "id": "bb441aca-b8dd-48fb-ab05-0470912b3b42",
-                "resourcePath": "objects\\obj_enemy_dummy_shooter2\\obj_enemy_dummy_shooter2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "dccd7895-623a-4047-b0e1-7766a4346259",
             "Value": {
                 "id": "8895c1ad-c438-4e22-88bb-1754e01ffc7d",
