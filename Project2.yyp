@@ -530,7 +530,7 @@
             "Key": "c75494e8-9ded-4025-90e6-70f80b159aeb",
             "Value": {
                 "id": "ac6cfaa1-6e9f-4f71-93ab-be98484e0229",
-                "resourcePath": "objects\\obj_manager\\obj_manager.yy",
+                "resourcePath": "objects\\obj_game_controller\\obj_game_controller.yy",
                 "resourceType": "GMObject"
             }
         },

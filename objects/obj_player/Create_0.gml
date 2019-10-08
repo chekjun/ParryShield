@@ -3,8 +3,8 @@ health = 100;
 energy = 100;
 
 // Movement
-moveSpeed = 2.5;
-dashSpeed = 7.5;
+moveSpeed = 2;
+dashSpeed = 7;
 
 // Boolean
 isDead = false;
