@@ -7,8 +7,8 @@ switch(sprite_index) {
     break;
 	case spr_player_parry_down:
 		sprite_index = spr_playerS;
-    break;
+		break;
 	case spr_player_parry_right:
 		sprite_index = spr_playerD;
-    break;
+		break;
 }
