@@ -12,6 +12,7 @@ isDashing = false;
 isShooting = false;
 isParrying = false;
 isBlocking = false;
+isInvulnerable = false;
 
 // Cooldown
 dashCooldown = 250;
@@ -28,3 +29,4 @@ shootCooldownTimer = 0;
 shootDurationTimer = 0;
 parryCooldownTimer = 0;
 parryDurationTimer = 0;
+invulnerableDurationTimer = 0;
