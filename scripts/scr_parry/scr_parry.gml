@@ -1,5 +1,4 @@
 if (key_parry and parryCooldownTimer == 0) {
-		show_debug_message("Parry Triggered!");
 		isParrying = true;
 		parryCooldownTimer = parryCooldown;
 		parryDurationTimer = parryDuration;

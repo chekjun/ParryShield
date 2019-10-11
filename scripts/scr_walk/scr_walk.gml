@@ -3,8 +3,8 @@ hspeed = (key_right - key_left) * moveSpeed;
 vspeed = (key_down - key_up) * moveSpeed;
 
 if (hspeed != 0 and vspeed != 0) {
-	hspeed = hspeed * round(sqrt(2) / 2);
-	vspeed = vspeed * round(sqrt(2) / 2);
+	hspeed = hspeed * (sqrt(2) / 2);
+	vspeed = vspeed * (sqrt(2) / 2);
 }
 
 if (place_meeting(x + hspeed, y, obj_wall)) {

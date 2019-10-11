@@ -1,5 +1,6 @@
 // Parry Animation
 lookingAngle = point_direction(x, y, mouse_x, mouse_y);
+image_speed = 1;
 if (lookingAngle > 45 and lookingAngle < 135) {
 	sprite_index = spr_player_parry_up;
 } else if (lookingAngle >= 135 and lookingAngle <= 225) {

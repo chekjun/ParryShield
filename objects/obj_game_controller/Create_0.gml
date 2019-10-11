@@ -1,10 +1,9 @@
 current_room = 0;
 
 isBulletTime = false;
-TimeScale = 1;
 
-bulletTimeCooldown = 25;
+bulletTimeCooldown = 15;
 bulletTimeCooldownTimer = 0;
 
-bulletTimeDuration = 25;
+bulletTimeDuration = 15;
 bulletTimeDurationTimer = 0;

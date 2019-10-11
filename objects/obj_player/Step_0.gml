@@ -1,28 +1,29 @@
-if (isDead) {
-	exit;
-}
-
+if (isDead) exit;
 scr_cooldown();
-
-if (isDashing) {
-	exit;
-}
-
 scr_get_player_input();
 
-if (!isParrying) {
+if (!isRolling and !isParrying) {
 	scr_walk();
-	scr_dash();
+	scr_roll();
 }
 
-if (!isShooting) {
+if (!isRolling) {
 	scr_shoot();
 }
 
-if (!isParrying) {
+if (!isRolling) {
 	scr_parry();
 }
 
-if (!isParrying) {
+if (!isRolling and !isParrying) {
 	scr_block();
 }
+
+// Check health
+if (health <= 0 and !isDead) {
+	isDead = true;
+	hspeed = 0;
+	vspeed = 0;
+}
+
+depth = -bbox_bottom;

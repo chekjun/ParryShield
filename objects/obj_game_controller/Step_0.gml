@@ -1,5 +1,6 @@
 if (instance_exists(obj_player) and obj_player.isDead and keyboard_check_pressed(ord("R"))) {
-	game_restart();
+	instance_destroy(obj_player);
+	instance_create_depth(obj_respawn_point.x, obj_respawn_point.y, depth, obj_player);
 }
 
 if (keyboard_check_pressed(ord("N")) and room_exists(current_room - 1)) {
@@ -25,6 +26,6 @@ if (bulletTimeDurationTimer > 0) {
 } else {
 	isBulletTime = false;
 	with(obj_enemy_bullet) {
-		speed = 2;
+		speed = 2.5;
 	}
 }

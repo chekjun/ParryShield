@@ -1,10 +1,10 @@
-// Dash Cooldown Timer
-if (dashCooldownTimer > 0) {
-	--dashCooldownTimer;
+// Roll Cooldown Timer
+if (rollCooldownTimer > 0) {
+	--rollCooldownTimer;
 }
 
-if (dashDurationTimer > 0) {
-	--dashDurationTimer;
+if (rollDurationTimer > 0) {
+	--rollDurationTimer;
 	if (place_meeting(x + hspeed, y, obj_wall)) {
 		while (!place_meeting(x + sign(hspeed), y, obj_wall)) {
 			x = x + sign(hspeed);
@@ -19,7 +19,7 @@ if (dashDurationTimer > 0) {
 		vspeed = 0;
 	}
 } else {
-	isDashing = false;
+	isRolling = false;
 }
 
 // Shoot Cooldown Timer

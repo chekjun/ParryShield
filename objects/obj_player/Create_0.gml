@@ -3,8 +3,8 @@ health = 100;
 energy = 100;
 
 // Movement
-moveSpeed = 2;
-dashSpeed = 7;
+moveSpeed = 2.5;
+rollSpeed = 5;
 
 // Boolean
 isDead = false;
@@ -15,18 +15,21 @@ isBlocking = false;
 isInvulnerable = false;
 
 // Cooldown
-dashCooldown = 250;
-dashDuration = 25;
-shootCooldown = 50;
-shootDuration = 10;
-parryCooldown = 100;
-parryDuration = 25;
+rollCooldown = 60;
+rollDuration = 15;
+shootCooldown = 30;
+shootDuration = 15;
+parryCooldown = 60;
+parryDuration = 15;
+invulnerableCooldown = 60
+invulnerableDuration = 15;
 
 // Timer
-dashCooldownTimer = 0;
-dashDurationTimer = 0;
+rollCooldownTimer = 0;
+rollDurationTimer = 0;
 shootCooldownTimer = 0;
 shootDurationTimer = 0;
 parryCooldownTimer = 0;
 parryDurationTimer = 0;
+invulnerableCooldownDuration = 0;
 invulnerableDurationTimer = 0;

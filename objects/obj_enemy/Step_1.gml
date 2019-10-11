@@ -1,4 +1,0 @@
-if (isDead) {
-	exit;
-}
-
