@@ -1,22 +1,39 @@
+// Stats
+health = 100;
+energy = 100;
+
+// Movement
+moveSpeed = 2;
+rollSpeed = 6;
 state = PlayerStates.IDLE;
 facing = PlayerDirections.DOWN;
 
+// Boolean
+isDead = false;
+isDashing = false;
+isShooting = false;
+isParrying = false;
+isBlocking = false;
+isInvulnerable = false;
+
 // Cooldown
+invulnerableCooldown = 60;
 rollCooldown = 60;
-rollDuration = 15;
-shootCooldown = 30;
-shootDuration = 15;
+shootCooldown = 60;
 parryCooldown = 60;
+
+invulnerableDuration = 30;
+rollDuration = 15;
+shootDuration = 15;
 parryDuration = 15;
-invulnerableCooldown = 60
-invulnerableDuration = 15;
 
 // Timer
+invulnerableCooldownTimer = 0;
 rollCooldownTimer = 0;
-rollDurationTimer = 0;
 shootCooldownTimer = 0;
-shootDurationTimer = 0;
 parryCooldownTimer = 0;
-parryDurationTimer = 0;
-invulnerableCooldownDuration = 0;
+
 invulnerableDurationTimer = 0;
+rollDurationTimer = 0;
+shootDurationTimer = 0;
+parryDurationTimer = 0;

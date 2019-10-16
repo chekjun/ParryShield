@@ -1,10 +1,16 @@
-if (obj_player.parryDurationTimer == 0) {
+if (instance_exists(obj_player)) {
+	player = obj_player;
+} else {
+	player = obj_delta;
+}
+
+if (player.parryDurationTimer == 0) {
 	show_debug_message("Parry Over!");
 	instance_destroy();
 }
 
-playerX = obj_player.x;
-playerY = obj_player.y;
+playerX = player.x;
+playerY = player.y;
 
 x = playerX + lengthdir_x(24, point_direction(playerX, playerY, mouse_x, mouse_y));
 y = playerY + lengthdir_y(24, point_direction(playerX, playerY, mouse_x, mouse_y));
