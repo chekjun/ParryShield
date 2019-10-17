@@ -1,8 +1,5 @@
-if (instance_exists(obj_player)) {
-	player = obj_player;
-} else {
-	player = obj_delta;
-}
+player = obj_delta;
+
 
 if (player.parryDurationTimer == 0) {
 	show_debug_message("Parry Over!");

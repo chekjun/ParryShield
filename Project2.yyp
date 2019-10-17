@@ -431,6 +431,14 @@
             }
         },
         {
+            "Key": "836fff54-362b-4f06-9856-a45f295e68c5",
+            "Value": {
+                "id": "8108a644-f580-4a5b-8c00-77fd3dc37ec4",
+                "resourcePath": "scripts\\scr_enemy_states\\scr_enemy_states.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "86b0467c-7377-4f6e-ae64-c7b0e116c9c2",
             "Value": {
                 "id": "eeb7f806-28ab-41f1-a272-a8fe1c9ae3ca",
@@ -866,6 +874,7 @@
     "script_order": [
         "6c5346f8-24b7-41bb-8c28-bd5239d7f656",
         "8d9b389d-9343-4c78-8937-5e4830b2c12c",
+        "836fff54-362b-4f06-9856-a45f295e68c5",
         "cf2a0522-dc0b-4a04-b4b0-db21e2da51b2",
         "81c6c785-be93-43ef-a951-d0c38f62a55d",
         "a76b5714-928d-4eab-8f4e-2f4fcf389d48",
