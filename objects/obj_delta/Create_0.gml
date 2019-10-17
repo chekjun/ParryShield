@@ -4,7 +4,7 @@ energy = 100;
 
 // Movement
 moveSpeed = 2;
-rollSpeed = 6;
+rollSpeed = 5;
 state = PlayerStates.IDLE;
 facing = PlayerDirections.DOWN;
 
@@ -23,7 +23,7 @@ shootCooldown = 60;
 parryCooldown = 60;
 
 invulnerableDuration = 30;
-rollDuration = 15;
+rollDuration = 30;
 shootDuration = 15;
 parryDuration = 15;
 

@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "36c4bb0a-392e-4a91-9c91-370bc7fe1ce9",
+            "Value": {
+                "id": "aafac3fe-a9cd-44f7-a0b4-5c82aceaba6f",
+                "resourcePath": "sprites\\spr_delta_roll_up\\spr_delta_roll_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "36fd4f4e-e143-4337-bf5c-5b22b35cfec0",
             "Value": {
                 "id": "5f7d18f5-fc9c-4229-a04c-7e7703dd2ba1",
@@ -252,6 +260,14 @@
                 "id": "1edb8591-3678-4927-bc6b-1edf63b4438e",
                 "resourcePath": "objects\\obj_wall\\obj_wall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4b483f16-0ee4-4d84-a5f0-f27d13847eec",
+            "Value": {
+                "id": "564987ab-8d1e-4383-8927-3df7810d85ca",
+                "resourcePath": "sprites\\spr_delta_roll_right\\spr_delta_roll_right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -471,6 +487,14 @@
             }
         },
         {
+            "Key": "8da4d5d6-ccf6-4764-88b8-4a281c34cb7b",
+            "Value": {
+                "id": "9018596e-222f-4bb9-a95c-51234dee81d1",
+                "resourcePath": "views\\8da4d5d6-ccf6-4764-88b8-4a281c34cb7b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "91ecd538-4af4-428d-8dbb-ba06336fefb1",
             "Value": {
                 "id": "f066fb1a-3e56-48da-93e0-9e29f6818d4c",
@@ -540,6 +564,14 @@
                 "id": "5045be7c-fa46-4db8-9dad-8dc584da166e",
                 "resourcePath": "rooms\\room_main_menu\\room_main_menu.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "9c6fe09c-3f80-4339-b573-c572cc38873f",
+            "Value": {
+                "id": "e7c6fc5b-7f03-4849-9370-b328a3119d84",
+                "resourcePath": "sprites\\spr_delta_roll_down\\spr_delta_roll_down.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -883,6 +915,14 @@
             "Value": {
                 "id": "1f2f75f7-03e7-4bbd-8e41-4564948df219",
                 "resourcePath": "sprites\\spr_player_parry_up\\spr_player_parry_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fecfd01d-41b9-4d25-b0b3-89aa471bab67",
+            "Value": {
+                "id": "26ea39c7-958b-4cb3-98ba-e7021396a221",
+                "resourcePath": "sprites\\spr_delta_roll_left\\spr_delta_roll_left.yy",
                 "resourceType": "GMSprite"
             }
         }
