@@ -6,6 +6,9 @@ if (shootCooldownTimer > 0) {
 }
 if (parryCooldownTimer > 0) {
 	--parryCooldownTimer;
+	if (parryCooldownTimer == 15) {
+		instance_create_depth(x, y + 10, -bbox_bottom - 10, obj_effect_spark);
+	}
 }
 
 // Get Player Input
@@ -63,6 +66,7 @@ switch state {
 		if (key_shoot and shootCooldownTimer <= 0 and energy >= 50) {
 			show_debug_message("Shoot Triggered!");
 			instance_create_depth(x, y, depth, obj_delta_bullet);
+			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
 			energy = energy - 50;
 			state = PlayerStates.SHOOT;
@@ -136,6 +140,7 @@ switch state {
 		// Walk to Roll
 		if (key_roll and rollCooldownTimer <= 0) {
 			show_debug_message("Roll Triggered!");
+			rollCooldownTimer = rollCooldown;
 			rollDurationTimer = rollDuration;
 			horizontalSpeed = (key_right - key_left) * moveSpeed * moveSpeed;
 			verticalSpeed = (key_down - key_up) * moveSpeed * moveSpeed;
@@ -168,7 +173,6 @@ switch state {
 			// Roll
 			scr_delta_move(horizontalSpeed, verticalSpeed);
 		} else {
-			rollCooldownTimer = rollCooldown;
 			state = PlayerStates.IDLE;
 		}
 	break;
@@ -177,7 +181,6 @@ switch state {
 		if (shootDurationTimer > 0) {
 			--shootDurationTimer;
 		} else {
-			shootCooldownTimer = shootCooldown;
 			state = PlayerStates.IDLE;
 		}
 	break;
@@ -211,7 +214,6 @@ switch state {
 				image_index = 0;
 			}
 		} else {
-			instance_create_depth(x, y + 10, depth, obj_effect_spark);
 			state = PlayerStates.IDLE;
 		}
 	break;
