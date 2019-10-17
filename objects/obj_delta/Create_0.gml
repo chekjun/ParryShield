@@ -4,7 +4,8 @@ energy = 100;
 
 // Movement
 moveSpeed = 2;
-rollSpeed = 5;
+horizontalSpeed = 0;
+verticalSpeed = 0;
 state = PlayerStates.IDLE;
 facing = PlayerDirections.DOWN;
 

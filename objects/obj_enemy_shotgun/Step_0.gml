@@ -6,7 +6,7 @@ if (shootCooldownTimer > 0) {
 	--shootCooldownTimer;
 }
 
-if (!collision_line(x, y, obj_player.x, obj_player.y, obj_wall, true, true) and distance_to_object(obj_player) < 200 and detectCooldownTimer > 0) {
+if (!collision_line(x, y, obj_delta.x, obj_delta.y, obj_wall, true, true) and distance_to_object(obj_delta) < 200 and detectCooldownTimer > 0) {
 	--detectCooldownTimer;
 } else {
 	detectCooldownTimer = detectCooldown;

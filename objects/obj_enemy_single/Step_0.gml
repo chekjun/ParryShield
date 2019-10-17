@@ -2,8 +2,8 @@ if (isDead) {
 	exit;
 }
 
-if (!collision_line(x, y, obj_player.x, obj_player.y, obj_wall, true, true)
-	and distance_to_object(obj_player) < detectionRange
+if (!collision_line(x, y, obj_delta.x, obj_delta.y, obj_wall, true, true)
+	and distance_to_object(obj_delta) < detectionRange
 	and detectCooldownTimer > 0) {
 	--detectCooldownTimer;
 } else if (detectCooldownTimer < detectCooldown) {
