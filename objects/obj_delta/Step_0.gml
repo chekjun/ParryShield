@@ -211,6 +211,7 @@ switch state {
 				image_index = 0;
 			}
 		} else {
+			instance_create_depth(x, y + 10, depth, obj_effect_spark);
 			state = PlayerStates.IDLE;
 		}
 	break;

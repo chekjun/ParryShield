@@ -10,11 +10,11 @@ if (!collision_line(x, y, obj_delta.x, obj_delta.y, obj_wall, true, true)
 	++detectCooldownTimer;
 }
 
-if (shootCooldownTimer > 0) {
+if (shootCooldownTimer > 0 and obj_game_controller.bulletTimeDurationTimer <= 0) {
 	--shootCooldownTimer;
 }
 
-if (detectCooldownTimer == 0 and shootCooldownTimer == 0) {
+if (detectCooldownTimer == 0 and shootCooldownTimer == 0 and obj_game_controller.bulletTimeDurationTimer <= 0) {
 	shootCooldownTimer = shootCooldown;
 	instance_create_depth(x, y, depth, obj_enemy_bullet);
 }

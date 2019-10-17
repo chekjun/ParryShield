@@ -1,2 +1,4 @@
-instance_destroy();
-health -= 10;
+if (other.state != PlayerStates.ROLL) {
+	instance_destroy();
+	health = health - damage;
+}

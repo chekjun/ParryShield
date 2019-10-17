@@ -1,2 +1,2 @@
 instance_destroy();
-other.HP -= 10;
+other.HP = other.HP - damage;

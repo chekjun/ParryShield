@@ -1,3 +1,4 @@
+instance_create_depth(x, y, depth, obj_effect_spark);
 instance_create_depth(x, y, depth, obj_player_bullet);
 obj_delta.parryCooldownTimer = 0;
 obj_delta.energy = obj_delta.energy + 10;

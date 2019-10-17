@@ -10,11 +10,6 @@ state = PlayerStates.IDLE;
 facing = PlayerDirections.DOWN;
 
 // Boolean
-isDead = false;
-isDashing = false;
-isShooting = false;
-isParrying = false;
-isBlocking = false;
 isInvulnerable = false;
 
 // Cooldown
