@@ -1,5 +1,5 @@
 // Stats
-HP = 30;
+HP = 100;
 isDead = false;
 
 detectionRange = 250;
