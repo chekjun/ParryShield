@@ -17,6 +17,6 @@ if (bulletTimeDurationTimer > 0) {
 } else {
 	isBulletTime = false;
 	with(obj_enemy_bullet) {
-		speed = 2.5;
+		speed = 3;
 	}
 }

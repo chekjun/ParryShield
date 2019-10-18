@@ -1,6 +1,5 @@
 enum EnemyStates {
 	DEAD,
-	IDLE,
-	WALK,
-	ATTACK
+	PASSIVE,
+	ALERT
 }

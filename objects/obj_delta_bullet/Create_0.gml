@@ -1,4 +1,4 @@
-damage = 10;
+damage = 8;
 
 var vectX = mouse_x - x;
 var vectY = mouse_y - y;

@@ -1,3 +1,4 @@
+// Get Player Input
 key_up = keyboard_check(ord("W"));
 key_left = keyboard_check(ord("A"));
 key_down = keyboard_check(ord("S"));

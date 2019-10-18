@@ -1,25 +1,5 @@
-if (rollCooldownTimer > 0) {
-	--rollCooldownTimer;
-}
-if (shootCooldownTimer > 0) {
-	--shootCooldownTimer;
-}
-if (parryCooldownTimer > 0) {
-	--parryCooldownTimer;
-	if (parryCooldownTimer == 15) {
-		instance_create_depth(x, y + 10, -bbox_bottom - 10, obj_effect_spark);
-	}
-}
-
-// Get Player Input
-key_up = keyboard_check(ord("W"));
-key_left = keyboard_check(ord("A"));
-key_down = keyboard_check(ord("S"));
-key_right = keyboard_check(ord("D"));
-key_roll = keyboard_check_pressed(vk_space);
-key_shoot = mouse_check_button_pressed(mb_left);
-key_parry = mouse_check_button_pressed(mb_right);
-key_shield = mouse_check_button(mb_right);
+scr_cooldown();
+scr_get_player_input();
 
 switch state {
 	case PlayerStates.DEAD:
@@ -27,16 +7,7 @@ switch state {
 	break;
 	
 	case PlayerStates.IDLE:
-		// Idle Animation
-		if (facing == PlayerDirections.UP) {
-			sprite_index = spr_delta_idle_up;
-		} else if (facing == PlayerDirections.LEFT) {
-			sprite_index = spr_delta_idle_left;
-		} else if (facing == PlayerDirections.DOWN) {
-			sprite_index = spr_delta_idle_down;
-		} else if (facing == PlayerDirections.RIGHT) {
-			sprite_index = spr_delta_idle_right;
-		}
+		scr_idle_anim();
 		
 		// Idle to Parry
 		if (key_parry and parryCooldownTimer <= 0) {
@@ -81,20 +52,19 @@ switch state {
 	break;
 	
 	case PlayerStates.WALK:
-		// Walk Animation
+		// Check Walk Direction
 		if (key_left) {
-			sprite_index = spr_delta_walk_left;
 			facing = PlayerDirections.LEFT;
 		} else if (key_right) {
-			sprite_index = spr_delta_walk_right;
 			facing = PlayerDirections.RIGHT;
 		} else if (key_up){
-			sprite_index = spr_delta_walk_up;
 			facing = PlayerDirections.UP;
 		} else if (key_down) {
-			sprite_index = spr_delta_walk_down;
 			facing = PlayerDirections.DOWN;
 		}
+		
+		// Walk Animation
+		scr_walk_anim();
 		
 		// Walk
 		horizontalSpeed = (key_right - key_left) * moveSpeed;
@@ -156,20 +126,10 @@ switch state {
 	break;
 	
 	case PlayerStates.ROLL:
+		scr_roll_anim();
+	
 		if (rollDurationTimer > 0) {
-			--rollDurationTimer;
-			
-			// Roll Animation
-			if (facing == PlayerDirections.UP) {
-				sprite_index = spr_delta_roll_up;
-			} else if (facing == PlayerDirections.LEFT) {
-				sprite_index = spr_delta_roll_left;
-			} else if (facing == PlayerDirections.DOWN) {
-				sprite_index = spr_delta_roll_down;
-			} else if (facing == PlayerDirections.RIGHT) {
-				sprite_index = spr_delta_roll_right;
-			}
-			
+			--rollDurationTimer;	
 			// Roll
 			scr_delta_move(horizontalSpeed, verticalSpeed);
 		} else {
@@ -186,18 +146,9 @@ switch state {
 	break;
 	
 	case PlayerStates.PARRY:
+		scr_parry_anim();
 		if (parryDurationTimer > 0) {
 			--parryDurationTimer;
-			if (facing == PlayerDirections.UP) {
-				sprite_index = spr_delta_parry_up;
-			} else if (facing == PlayerDirections.LEFT) {
-				sprite_index = spr_delta_parry_left;
-			} else if (facing == PlayerDirections.DOWN) {
-				sprite_index = spr_delta_parry_down;
-			} else if (facing == PlayerDirections.RIGHT) {
-				sprite_index = spr_delta_parry_right;
-			}
-			
 			if (key_parry and parryCooldownTimer == 0) {
 				parryCooldownTimer = parryCooldown;
 				parryDurationTimer = parryDuration;
