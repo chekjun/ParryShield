@@ -19,16 +19,7 @@ switch state {
 				depth,
 				obj_parry
 			);
-			lookingAngle = point_direction(x, y, mouse_x, mouse_y);
-			if (lookingAngle > 45 and lookingAngle < 135) {
-				facing = PlayerDirections.UP;
-			} else if (lookingAngle >= 135 and lookingAngle <= 225) {
-				facing = PlayerDirections.LEFT;
-			} else if (lookingAngle > 225 and lookingAngle < 315) {
-				facing = PlayerDirections.DOWN;
-			} else if (lookingAngle >= 315 or lookingAngle <= 45) {
-				facing = PlayerDirections.RIGHT;
-			}
+			scr_look_at_mouse();
 			state = PlayerStates.PARRY;
 			break;
 		}
@@ -82,16 +73,7 @@ switch state {
 				depth,
 				obj_parry
 			);
-			lookingAngle = point_direction(x, y, mouse_x, mouse_y);
-			if (lookingAngle > 45 and lookingAngle < 135) {
-				facing = PlayerDirections.UP;
-			} else if (lookingAngle >= 135 and lookingAngle <= 225) {
-				facing = PlayerDirections.LEFT;
-			} else if (lookingAngle > 225 and lookingAngle < 315) {
-				facing = PlayerDirections.DOWN;
-			} else if (lookingAngle >= 315 or lookingAngle <= 45) {
-				facing = PlayerDirections.RIGHT;
-			}
+			scr_look_at_mouse();
 			state = PlayerStates.PARRY;
 			break;
 		}
@@ -152,16 +134,7 @@ switch state {
 			if (key_parry and parryCooldownTimer == 0) {
 				parryCooldownTimer = parryCooldown;
 				parryDurationTimer = parryDuration;
-				lookingAngle = point_direction(x, y, mouse_x, mouse_y);
-				if (lookingAngle > 45 and lookingAngle < 135) {
-					facing = PlayerDirections.UP;
-				} else if (lookingAngle >= 135 and lookingAngle <= 225) {
-					facing = PlayerDirections.LEFT;
-				} else if (lookingAngle > 225 and lookingAngle < 315) {
-					facing = PlayerDirections.DOWN;
-				} else if (lookingAngle >= 315 or lookingAngle <= 45) {
-					facing = PlayerDirections.RIGHT;
-				}
+				scr_look_at_mouse();
 				image_index = 0;
 			}
 		} else {
@@ -170,18 +143,7 @@ switch state {
 	break;
 }
 
-if (health <= 0) {
-	state = PlayerStates.DEAD;
-}
-
-if (health > 100) {
-	health = 100;
-}
-
-if (energy < 0) {
-	energy = 0;
-}
-
-if (energy > 100) {
-	energy = 100;
-}
+if (health <= 0) state = PlayerStates.DEAD;
+if (health > 100) health = 100;
+if (energy < 0) energy = 0;
+if (energy > 100) energy = 100;
