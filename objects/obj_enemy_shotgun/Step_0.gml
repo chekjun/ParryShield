@@ -16,9 +16,9 @@ if (detectCooldownTimer == 0 and shootCooldownTimer == 0) {
 	shootCooldownTimer = shootCooldown;
 	instance_create_depth(x, y, depth, obj_enemy_bullet);
 	rightBullet = instance_create_depth(x, y, depth, obj_enemy_bullet);
-	rightBullet.direction = rightBullet.direction - 30;
+	rightBullet.direction = rightBullet.direction - 15;
 	leftBullet = instance_create_depth(x, y, depth, obj_enemy_bullet);
-	leftBullet.direction = leftBullet.direction + 30;
+	leftBullet.direction = leftBullet.direction + 15;
 }
 
 if (HP <= 0 and !isDead) {
