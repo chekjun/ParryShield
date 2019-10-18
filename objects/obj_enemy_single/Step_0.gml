@@ -1,15 +1,21 @@
-if (isDead) {
-	exit;
+// Reload
+if (shootCooldownTimer > 0 and obj_game_controller.bulletTimeDurationTimer <= 0) {
+	--shootCooldownTimer;
 }
 
-switch alert {
+switch state {
 	case EnemyStates.DEAD:
+		speed = 0;
 		sprite_index = spr_enemy_dead;
 		exit;
 	break;
 	
-	case EnemyStates.PASSIVE:
-		if (rectangle_in_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, bview_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0])) {
+	case EnemyStates.IDLE:
+		speed = 0;
+		if (abs(obj_delta.x - x) < (room_width / 2) and abs(obj_delta.y - y) < (room_height / 2)) {
+			if (detectCooldownTimer <= 0) {
+				state = PlayerStates.WALK;
+			}
 			if (!collision_line(x, y, obj_delta.x, obj_delta.y, obj_wall, true, true)
 				and distance_to_object(obj_delta) <= detectionRange
 				and detectCooldownTimer > 0) {
@@ -17,34 +23,30 @@ switch alert {
 			} else if (detectCooldownTimer < detectCooldown) {
 				++detectCooldownTimer;
 			}
-		} else {
-			// Put randomised movement here
 		}
 	break;
 	
-	case EnemyStates.ALERT:
-		if (distance_to_object(obj_delta) < 50) {
-			move_towards_point(obj_delta.x, obj_delta.y, -2)
+	case EnemyStates.WALK:
+		if (health <= 0) {
+			state = EnemyStates.IDLE;
 		}
-		if (distance_to_object(obj_delta) > 150) {
-			move_towards_point(obj_delta.x, obj_delta.y, 2);
+		if (distance_to_object(obj_delta) < 50) {
+			move_towards_point(obj_delta.x, obj_delta.y, -1);
+		} else if (distance_to_object(obj_delta) > 150) {
+			move_towards_point(obj_delta.x, obj_delta.y, 1);
+		} else {
+			if (shootCooldownTimer <= 0) {
+				state = EnemyStates.ATTACK;		
+			}
 		}
 	break;
-}
-
-
-
-if (shootCooldownTimer > 0 and obj_game_controller.bulletTimeDurationTimer <= 0) {
-	--shootCooldownTimer;
-}
-
-if (detectCooldownTimer == 0 and shootCooldownTimer == 0 and obj_game_controller.bulletTimeDurationTimer <= 0) {
-	shootCooldownTimer = shootCooldown;
-	instance_create_depth(x, y, depth, obj_enemy_bullet);
-}
-
-if (health <= 0) {
-	state = EnemyStates.PASSIVE;
+	
+	case EnemyStates.ATTACK:
+		speed = 0;
+		instance_create_depth(x, y, depth, obj_enemy_bullet);
+		shootCooldownTimer = shootCooldown;
+		state = EnemyStates.WALK;
+	break;
 }
 
 if (HP <= 0) {

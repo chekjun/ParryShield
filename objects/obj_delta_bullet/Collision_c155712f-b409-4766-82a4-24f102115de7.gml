@@ -1,1 +1,1 @@
-other.HP = other.HP - damage;
+instance_destroy();

@@ -94,8 +94,8 @@ switch state {
 			show_debug_message("Roll Triggered!");
 			rollCooldownTimer = rollCooldown;
 			rollDurationTimer = rollDuration;
-			horizontalSpeed = (key_right - key_left) * moveSpeed * moveSpeed;
-			verticalSpeed = (key_down - key_up) * moveSpeed * moveSpeed;
+			horizontalSpeed = horizontalSpeed * moveSpeed;
+			verticalSpeed = verticalSpeed * moveSpeed;
 			state = PlayerStates.ROLL;
 			break;
 		}

@@ -1,5 +1,13 @@
 enum EnemyStates {
 	DEAD,
-	PASSIVE,
-	ALERT
+	IDLE,
+	WALK,
+	ATTACK
+}
+
+enum EnemyDirection {
+	UP,
+	LEFT,
+	DOWN,
+	RIGHT
 }

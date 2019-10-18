@@ -1,20 +1,20 @@
-horizontalSpeed = argument0;
-verticalSpeed = argument1;
-if (horizontalSpeed != 0 and verticalSpeed != 0) {
-	horizontalSpeed = horizontalSpeed * round(sqrt(2) / 2);
-	verticalSpeed = verticalSpeed * round(sqrt(2) / 2);
+hspd = argument0;
+vspd = argument1;
+if (hspd != 0 and vspd != 0) {
+	hspd = hspd * round(sqrt(3) / 3);
+	vspd = vspd * round(sqrt(3) / 3);
 }
-if (place_meeting(x + horizontalSpeed, y, obj_wall)) {
-	while (!place_meeting(x + sign(horizontalSpeed), y, obj_wall)) {
-		x = x + sign(horizontalSpeed);
+if (place_meeting(x + hspd, y, obj_wall)) {
+	while (!place_meeting(x + sign(hspd), y, obj_wall)) {
+		x = x + sign(hspd);
 	}
-	horizontalSpeed = 0;
+	hspd = 0;
 }
-if (place_meeting(x, y + verticalSpeed, obj_wall)) {
-		while (!place_meeting(x, y + sign(verticalSpeed), obj_wall)) {
-		y = y + sign(verticalSpeed);
+if (place_meeting(x, y + vspd, obj_wall)) {
+		while (!place_meeting(x, y + sign(vspd), obj_wall)) {
+		y = y + sign(vspd);
 	}
-	verticalSpeed = 0;
+	vspd = 0;
 }
-x = x + horizontalSpeed;
-y = y + verticalSpeed;
+x = x + hspd;
+y = y + vspd;
