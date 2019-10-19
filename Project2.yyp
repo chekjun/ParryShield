@@ -66,7 +66,7 @@
             "Key": "0d681e4f-2a64-440b-9b49-76772f128082",
             "Value": {
                 "id": "661eed56-f295-4e36-8305-5fc0df8a06cc",
-                "resourcePath": "objects\\obj_explosion\\obj_explosion.yy",
+                "resourcePath": "objects\\obj_explosion_hitbox\\obj_explosion_hitbox.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -575,6 +575,14 @@
             }
         },
         {
+            "Key": "aa1bb045-0086-4a09-aa45-983f28b92a14",
+            "Value": {
+                "id": "579bfb60-0e14-4f35-bd72-b2b091449cee",
+                "resourcePath": "objects\\obj_effect_explosion\\obj_effect_explosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ae446c78-ec7a-4d1c-8d44-c0309726609d",
             "Value": {
                 "id": "0f5bd2c6-a821-47e0-b7fb-062f5cd30565",
@@ -636,6 +644,14 @@
                 "id": "8501b408-95ed-4f2b-acc2-c32b4355ea1f",
                 "resourcePath": "views\\b8b41da4-1683-4caa-9784-24a906894e22.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b97469a1-3ee0-4df6-820f-3216ce0e7386",
+            "Value": {
+                "id": "91868fe1-7bc3-4877-b542-d7ebbfe0a509",
+                "resourcePath": "sprites\\spr_enemy_dead_hitbox\\spr_enemy_dead_hitbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

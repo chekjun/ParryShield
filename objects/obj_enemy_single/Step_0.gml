@@ -5,6 +5,7 @@ if (shootCooldownTimer > 0 and obj_game_controller.bulletTimeDurationTimer <= 0)
 
 switch state {
 	case EnemyStates.DEAD:
+		mask_index = spr_enemy_dead_hitbox;
 		sprite_index = spr_enemy_dead;
 		exit;
 	break;
