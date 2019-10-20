@@ -3,7 +3,7 @@ scr_get_player_input();
 
 switch state {
 	case PlayerStates.DEAD:
-		exit;
+		
 	break;
 	
 	case PlayerStates.IDLE:
@@ -38,6 +38,7 @@ switch state {
 		// Idle to Walk
 		if (key_right - key_left != 0 or key_down - key_up != 0) {
 			state = PlayerStates.WALK;
+			audio_play_sound(snd_step_grass, 1, true);
 			break;
 		}	
 	break;
@@ -74,6 +75,7 @@ switch state {
 				obj_parry
 			);
 			scr_look_at_mouse();
+			audio_stop_sound(snd_step_grass);
 			state = PlayerStates.PARRY;
 			break;
 		}
@@ -85,6 +87,7 @@ switch state {
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
 			energy = energy - 50;
+			audio_stop_sound(snd_step_grass);
 			state = PlayerStates.SHOOT;
 			break;
 		}
@@ -96,12 +99,14 @@ switch state {
 			rollDurationTimer = rollDuration;
 			horizontalSpeed = horizontalSpeed * moveSpeed;
 			verticalSpeed = verticalSpeed * moveSpeed;
+			audio_stop_sound(snd_step_grass);
 			state = PlayerStates.ROLL;
 			break;
 		}
 		
 		// Walk to Idle
 		if (key_right - key_left == 0 and key_down - key_up == 0) {
+			audio_stop_sound(snd_step_grass);
 			state = PlayerStates.IDLE;
 			break;
 		}
@@ -143,7 +148,20 @@ switch state {
 	break;
 }
 
-if (health <= 0) state = PlayerStates.DEAD;
-if (health > 100) health = 100;
-if (energy < 0) energy = 0;
-if (energy > 100) energy = 100;
+if (health <= 0) {
+	health = 0;
+	audio_stop_sound(bgm_loop);
+	state = PlayerStates.DEAD;
+}
+
+if (health >= 100) {
+	health = 100;
+}
+
+if (energy <= 0) {
+	energy = 0;
+}
+
+if (energy >= 100) {
+	energy = 100;
+}

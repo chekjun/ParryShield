@@ -31,3 +31,5 @@ invulnerableDurationTimer = 0;
 rollDurationTimer = 0;
 shootDurationTimer = 0;
 parryDurationTimer = 0;
+
+audio_play_sound(bgm_loop, 1, true);

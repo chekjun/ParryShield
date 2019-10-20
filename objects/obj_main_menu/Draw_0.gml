@@ -9,6 +9,7 @@ repeat (buttons) {
 	
 	if (menu_index == i) draw_set_color(c_red);
 	
-	draw_text(x, y + 32 * i, button[i]);
-	++i
+	draw_text(x, y + 64 * i, button[i]);
+	++i;
+	
 }
