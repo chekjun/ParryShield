@@ -1,6 +1,8 @@
 scr_cooldown();
 scr_get_player_input();
 
+if (parryCooldownTimer == 12) instance_create_depth(x, y + 10, -bbox_bottom - 10, obj_effect_spark);
+
 switch state {
 	case PlayerStates.DEAD:
 		

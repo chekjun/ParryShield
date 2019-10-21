@@ -6,7 +6,4 @@ if (shootCooldownTimer > 0) {
 }
 if (parryCooldownTimer > 0) {
 	--parryCooldownTimer;
-	if (parryCooldownTimer == 15) {
-		instance_create_depth(x, y + 10, -bbox_bottom - 10, obj_effect_spark);
-	}
 }

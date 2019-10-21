@@ -743,14 +743,6 @@
             }
         },
         {
-            "Key": "c2cbc18a-4984-4d63-82e7-9edcb6ca801f",
-            "Value": {
-                "id": "e0ed2dea-cabf-4914-b65f-6b5d6a159e34",
-                "resourcePath": "objects\\obj_ui_dash_cooldown\\obj_ui_dash_cooldown.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "c33f5257-4500-45d3-a355-a21203367183",
             "Value": {
                 "id": "75c7d0bb-4984-4501-a71a-c2c4f4a599ce",
@@ -834,7 +826,7 @@
             "Key": "e1ef42d3-7e64-4b6c-b995-6a825ac285eb",
             "Value": {
                 "id": "7fa402ff-1fbc-410c-906d-91ea20f38cf3",
-                "resourcePath": "sprites\\spr_ui_dash_cooldown\\spr_ui_dash_cooldown.yy",
+                "resourcePath": "sprites\\spr_roll_bar\\spr_roll_bar.yy",
                 "resourceType": "GMSprite"
             }
         },
