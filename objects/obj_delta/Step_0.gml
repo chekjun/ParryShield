@@ -33,6 +33,7 @@ switch state {
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
 			energy = energy - 50;
+			scr_look_at_mouse();
 			state = PlayerStates.SHOOT;
 			break;
 		}
@@ -89,6 +90,7 @@ switch state {
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
 			energy = energy - 50;
+			scr_look_at_mouse();
 			audio_stop_sound(snd_step_grass);
 			state = PlayerStates.SHOOT;
 			break;
@@ -127,6 +129,7 @@ switch state {
 	break;
 	
 	case PlayerStates.SHOOT:
+		scr_shoot_anim();
 		if (shootDurationTimer > 0) {
 			--shootDurationTimer;
 		} else {
