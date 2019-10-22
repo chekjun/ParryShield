@@ -1,9 +1,12 @@
 // Stats
 HP = 100;
 
-detectionRange = 150;
+detectionRange = 200;
+retreatRange = 100;
+advanceRange = 150;
+chaseRangeLimit = 500;
 
-detectCooldown = 60;
+detectCooldown = 90;
 shootCooldown = 120;
 
 detectCooldownTimer = detectCooldown;

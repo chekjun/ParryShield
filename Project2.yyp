@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "2f366f87-ce62-424d-8b4b-621bbce303e3",
+            "Value": {
+                "id": "b7fc3e93-1ae8-46d0-b036-75a6a6ffc3a8",
+                "resourcePath": "sprites\\spr_delta_shoot_down\\spr_delta_shoot_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "35d02362-b4a8-441b-921f-70b19e5338de",
             "Value": {
                 "id": "7623991b-478f-42eb-8fab-7fcbed218fb0",
@@ -247,6 +255,14 @@
             }
         },
         {
+            "Key": "3d545878-106d-4b75-aeeb-9787864d3b59",
+            "Value": {
+                "id": "951ffb75-f607-4727-a3c5-9136fba1de06",
+                "resourcePath": "sprites\\spr_delta_shoot_up\\spr_delta_shoot_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d5a8235-65db-495b-8d3a-ae547ddd2346",
             "Value": {
                 "id": "6aef510c-b751-48e7-a0f9-7674a4fd0ef9",
@@ -268,6 +284,22 @@
                 "id": "1edb8591-3678-4927-bc6b-1edf63b4438e",
                 "resourcePath": "objects\\obj_wall\\obj_wall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "473392b4-3173-4048-8d0c-2369eb0d1999",
+            "Value": {
+                "id": "58ac7773-8c8c-40bd-840c-7270ffebfc23",
+                "resourcePath": "views\\473392b4-3173-4048-8d0c-2369eb0d1999.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "48b2ab7e-e775-406f-8515-ba84a9e73394",
+            "Value": {
+                "id": "8e5f2a2a-e0b1-4813-892f-6d4221554822",
+                "resourcePath": "sprites\\spr_delta_shoot_left\\spr_delta_shoot_left.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -420,6 +452,14 @@
                 "id": "3a11a236-e60d-484d-9771-54fe3b0e8de1",
                 "resourcePath": "objects\\obj_main_menu\\obj_main_menu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "77422341-325d-4e31-ba61-a32438a733ae",
+            "Value": {
+                "id": "c1d3998a-04a9-48ea-b199-bef3410a7384",
+                "resourcePath": "sprites\\spr_delta_shoot_right\\spr_delta_shoot_right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

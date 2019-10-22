@@ -5,7 +5,7 @@ if (parryCooldownTimer == 12) instance_create_depth(x, y + 10, -bbox_bottom - 10
 
 switch state {
 	case PlayerStates.DEAD:
-		
+		sprite_index = spr_delta_idle_down;
 	break;
 	
 	case PlayerStates.IDLE:
