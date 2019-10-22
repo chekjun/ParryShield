@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "2f5f3a89-2d80-4f58-8b1a-49cb05d6a2fa",
+            "Value": {
+                "id": "5ca0b541-0000-4a4d-aec0-747feb7f2b68",
+                "resourcePath": "rooms\\room_Vertical\\room_Vertical.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "35d02362-b4a8-441b-921f-70b19e5338de",
             "Value": {
                 "id": "7623991b-478f-42eb-8fab-7fcbed218fb0",
@@ -252,6 +260,14 @@
                 "id": "6aef510c-b751-48e7-a0f9-7674a4fd0ef9",
                 "resourcePath": "views\\3d5a8235-65db-495b-8d3a-ae547ddd2346.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3da082bf-de69-4f37-a0aa-f6ebbfdef1df",
+            "Value": {
+                "id": "4586ad30-6e67-464d-8a7d-5f3d519f7dde",
+                "resourcePath": "rooms\\room_Horizontal\\room_Horizontal.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -420,6 +436,14 @@
                 "id": "3a11a236-e60d-484d-9771-54fe3b0e8de1",
                 "resourcePath": "objects\\obj_main_menu\\obj_main_menu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "750b1b3c-aff1-4ed7-8dfe-1712b726ff06",
+            "Value": {
+                "id": "9434a651-95e8-4710-bd8c-6fe186ceaa06",
+                "resourcePath": "tilesets\\grass_tileset\\grass_tileset.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -931,6 +955,14 @@
             "Value": {
                 "id": "0cfb5a39-1626-478f-9a45-aa0b95b1dcb6",
                 "resourcePath": "sprites\\spr_next_area\\spr_next_area.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fc65ed2e-fa9f-4c1c-a074-371a7145b4e8",
+            "Value": {
+                "id": "544c090b-f9e4-4c93-aafe-d7abfe5e7334",
+                "resourcePath": "sprites\\grass_tileset_test\\grass_tileset_test.yy",
                 "resourceType": "GMSprite"
             }
         },
