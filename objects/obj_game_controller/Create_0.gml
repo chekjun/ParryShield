@@ -1,3 +1,4 @@
+isPaused = false;
 isBulletTime = false;
 
 bulletTimeCooldown = 15;

@@ -1,9 +1,11 @@
 scr_cooldown();
 scr_get_player_input();
 
+if (parryCooldownTimer == 12) instance_create_depth(x, y + 10, -bbox_bottom - 10, obj_effect_spark);
+
 switch state {
 	case PlayerStates.DEAD:
-		
+		sprite_index = spr_delta_idle_down;
 	break;
 	
 	case PlayerStates.IDLE:
@@ -31,6 +33,7 @@ switch state {
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
 			energy = energy - 50;
+			scr_look_at_mouse();
 			state = PlayerStates.SHOOT;
 			break;
 		}
@@ -87,6 +90,7 @@ switch state {
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
 			energy = energy - 50;
+			scr_look_at_mouse();
 			audio_stop_sound(snd_step_grass);
 			state = PlayerStates.SHOOT;
 			break;
@@ -125,6 +129,7 @@ switch state {
 	break;
 	
 	case PlayerStates.SHOOT:
+		scr_shoot_anim();
 		if (shootDurationTimer > 0) {
 			--shootDurationTimer;
 		} else {
