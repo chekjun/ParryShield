@@ -23,7 +23,7 @@ if (help) {
 	
 		// Credits
 		case 2:
-		
+			room_goto(6);
 		break;
 	
 		// Exit
