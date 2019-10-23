@@ -10,7 +10,7 @@ if (help) {
 	
 		// Play
 		case 0:
-			room_goto_next();
+			room_goto(2);
 		break;
 	
 		// Help
@@ -23,7 +23,7 @@ if (help) {
 	
 		// Credits
 		case 2:
-			room_goto(6);
+			room_goto(1);
 		break;
 	
 		// Exit
