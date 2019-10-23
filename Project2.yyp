@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "591a9542-1d22-4a73-b0f9-ab15b3d073e8",
+            "Value": {
+                "id": "a77019f1-c7e8-469a-b543-db004865c065",
+                "resourcePath": "sounds\\bgm_credits\\bgm_credits.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5bd4bebc-87ec-44a2-870d-d294f7413cbd",
             "Value": {
                 "id": "18dfe27b-18df-45de-b2dd-84b09639dc05",
@@ -532,6 +540,14 @@
                 "id": "caabe9ea-fc48-4961-84c4-f9d5ff26eb72",
                 "resourcePath": "views\\7df95154-0cb8-45ac-97e1-6fd6f092b06d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7e605b30-29db-492f-9bf8-459c0087a94e",
+            "Value": {
+                "id": "6ae48e0e-23ee-42ed-8b4d-35290e3a545d",
+                "resourcePath": "fonts\\font_credit_title\\font_credit_title.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -1028,6 +1044,14 @@
                 "id": "17b3dd95-0624-492e-bf1d-4f2d3ba4887f",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f452d09a-5ef1-40ce-a843-34d7ff028ff5",
+            "Value": {
+                "id": "6408154b-a299-4d8d-a2f2-7467e9ee460e",
+                "resourcePath": "fonts\\font_credit_subtitle\\font_credit_subtitle.yy",
+                "resourceType": "GMFont"
             }
         },
         {
