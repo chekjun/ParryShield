@@ -12,3 +12,7 @@ menu_index = 0;
 last_selected = 0;
 
 help = false;
+
+with(obj_help) {
+	visible = false;	
+}

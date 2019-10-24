@@ -29,9 +29,10 @@ switch state {
 		// Idle to Shoot
 		if (key_shoot and shootCooldownTimer <= 0 and energy >= 50) {
 			show_debug_message("Shoot Triggered!");
-			instance_create_depth(x, y, depth, obj_delta_bullet);
+			// instance_create_depth(x, y, depth, obj_delta_bullet);
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
+			chargingDurationTimer = chargingDuration;
 			energy = energy - 50;
 			scr_look_at_mouse();
 			state = PlayerStates.SHOOT;
@@ -86,7 +87,6 @@ switch state {
 		// Walk to Shoot
 		if (key_shoot and shootCooldownTimer <= 0 and energy >= 50) {
 			show_debug_message("Shoot Triggered!");
-			instance_create_depth(x, y, depth, obj_delta_bullet);
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
 			energy = energy - 50;
@@ -130,6 +130,11 @@ switch state {
 	
 	case PlayerStates.SHOOT:
 		scr_shoot_anim();
+		--chargingDurationTimer;	
+		if(chargingDurationTimer == 0) {
+			instance_create_depth(x, y, depth, obj_delta_bullet);
+		}
+		
 		if (shootDurationTimer > 0) {
 			--shootDurationTimer;
 		} else {
