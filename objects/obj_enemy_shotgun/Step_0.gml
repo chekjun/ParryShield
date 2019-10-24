@@ -27,8 +27,6 @@ switch state {
 		if (abs(obj_delta.x - x) > (chaseRangeLimit) or abs(obj_delta.y - y) > (chaseRangeLimit) or health <= 0) {
 			speed = 0;
 			state = EnemyStates.IDLE;
-		} else if (distance_to_object(obj_delta) < retreatRange) {
-			move_towards_point(obj_delta.x, obj_delta.y, -1);
 		} else if (distance_to_object(obj_delta) > advanceRange) {
 			move_towards_point(obj_delta.x, obj_delta.y, 1);
 		} else {

@@ -89,6 +89,7 @@ switch state {
 			show_debug_message("Shoot Triggered!");
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
+			chargingDurationTimer = chargingDuration;
 			energy = energy - 50;
 			scr_look_at_mouse();
 			audio_stop_sound(snd_step_grass);
@@ -131,6 +132,7 @@ switch state {
 	case PlayerStates.SHOOT:
 		scr_shoot_anim();
 		--chargingDurationTimer;	
+		show_debug_message(chargingDurationTimer);
 		if(chargingDurationTimer == 0) {
 			instance_create_depth(x, y, depth, obj_delta_bullet);
 		}
@@ -138,6 +140,7 @@ switch state {
 		if (shootDurationTimer > 0) {
 			--shootDurationTimer;
 		} else {
+			show_debug_message("yeet");
 			state = PlayerStates.IDLE;
 		}
 	break;

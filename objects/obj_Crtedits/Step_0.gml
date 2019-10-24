@@ -1,6 +1,6 @@
 if(keyboard_check_pressed(vk_anykey)) {
 	audio_stop_all();
-	room_goto(0);	
+	game_restart();
 }
 
 if(timer <= 0) {
@@ -10,7 +10,7 @@ if(timer <= 0) {
 	} else if(ads == 1) {	// Make Appear
 		if(index == 11) {
 			audio_stop_all();
-			room_goto(0);	
+			game_restart();
 		}
 		var i = index;
 		title = string(line0[i]);

@@ -13,7 +13,7 @@ isInvulnerable = false;
 // Cooldown
 invulnerableCooldown = 60;
 rollCooldown = 90;
-shootCooldown = 300;
+shootCooldown = 60;
 parryCooldown = 75;
 
 invulnerableDuration = 30;

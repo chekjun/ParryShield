@@ -1,10 +1,10 @@
 
 // Stats
-HP = 100;
+HP = 150;
 
 detectionRange = 200;
 retreatRange = 100;
-advanceRange = 150;
+advanceRange = 125;
 chaseRangeLimit = 500;
 
 detectCooldown = 60;
