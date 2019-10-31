@@ -1,10 +1,14 @@
 audio_play_sound(snd_menu_select, 1, false);
 
 if (help) {
-	//layer_set_visible(0, true); // Menu Appear
-	//layer_set_visible(1, false); // Help Disappear
 	with(obj_main_menu) {
 		visible = true;	
+	}
+	with (obj_title_text) {
+		visible = true;
+	}
+	with (obj_title_bonfire) {
+		visible = true;
 	}
 	with(obj_help) {
 		visible = false;	
@@ -20,10 +24,14 @@ if (help) {
 	
 		// Help
 		case 1:
-			//layer_set_visible(0, false); // Menu Disappear
-			//layer_set_visible(1, true); // Help ppear
 			with(obj_main_menu) {
-				visible = false;	
+				visible = false;
+			}
+			with (obj_title_text) {
+				visible = false;
+			}
+			with (obj_title_bonfire) {
+				visible = false;
 			}
 			with(obj_help) {
 				visible = true;
