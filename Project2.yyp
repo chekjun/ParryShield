@@ -527,6 +527,14 @@
             }
         },
         {
+            "Key": "6e46dcf2-d245-4bd9-9244-48b58b7ba51c",
+            "Value": {
+                "id": "a43544d7-c4a3-4a65-a690-5a8daa6156dd",
+                "resourcePath": "views\\6e46dcf2-d245-4bd9-9244-48b58b7ba51c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "750b1b3c-aff1-4ed7-8dfe-1712b726ff06",
             "Value": {
                 "id": "9434a651-95e8-4710-bd8c-6fe186ceaa06",
@@ -1092,6 +1100,14 @@
                 "id": "669c3598-5716-4953-9a4a-f5eb8e07f211",
                 "resourcePath": "scripts\\scr_idle_anim\\scr_idle_anim.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f0754a0e-613a-4e98-9f42-230b1784ea97",
+            "Value": {
+                "id": "402523ae-4b6b-47f8-9355-ed533127c6d8",
+                "resourcePath": "objects\\obj_enemy_fan\\obj_enemy_fan.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,3 +1,5 @@
+// window_set_fullscreen(true);
+
 x = (room_width / 2) - 1;
 y = (2 * room_height / 5) - 1;
 
