@@ -714,7 +714,7 @@
             "Key": "a15d82e5-c710-4988-9426-f66be1c2a1c4",
             "Value": {
                 "id": "1bc776d7-29c1-403b-b5db-85bd3a764ca0",
-                "resourcePath": "objects\\obj_Crtedits\\obj_Crtedits.yy",
+                "resourcePath": "objects\\obj_credits\\obj_credits.yy",
                 "resourceType": "GMObject"
             }
         },
