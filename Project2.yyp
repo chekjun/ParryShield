@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "017acda5-8052-43bb-9525-07d1cdbbcbba",
+            "Value": {
+                "id": "85c0e327-7630-471e-841d-d2d7aa065e77",
+                "resourcePath": "fonts\\font_textbox\\font_textbox.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "0539dfbc-d2dc-4e0e-bd5e-82fcfac7be4f",
             "Value": {
                 "id": "24d16092-5164-4884-b139-646010ae7d39",
@@ -647,6 +655,14 @@
             }
         },
         {
+            "Key": "872f7c50-6732-4850-9d99-349794994ede",
+            "Value": {
+                "id": "310af8a7-e3b5-4d6f-a5dd-408cad8ba48b",
+                "resourcePath": "objects\\obj_textbox\\obj_textbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "89a2b437-896d-459a-8219-6e7dbc992ff9",
             "Value": {
                 "id": "fea8b652-2d0a-44b9-9980-73a9afeeddf9",
@@ -684,6 +700,14 @@
                 "id": "70588b8a-4584-4ada-99dd-8f97d7fbb7e5",
                 "resourcePath": "sounds\\snd_step_grass\\snd_step_grass.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "98deacd7-0edf-412c-9e23-c8555390299d",
+            "Value": {
+                "id": "2628fa31-aad4-49c1-a62c-aadc3f0bde6d",
+                "resourcePath": "fonts\\font_pixel_text\\font_pixel_text.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -899,6 +923,14 @@
             "Value": {
                 "id": "711d4c66-b875-40f5-bc11-c0365d9b2531",
                 "resourcePath": "sprites\\spr_delta_hitbox_invulnerable\\spr_delta_hitbox_invulnerable.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bbf9741e-edbd-4590-a505-b80b0072be18",
+            "Value": {
+                "id": "f35b1798-cda0-4fbb-b91f-8f60542e1a45",
+                "resourcePath": "sprites\\spr_textbox\\spr_textbox.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1140,6 +1172,14 @@
                 "id": "0cfb5a39-1626-478f-9a45-aa0b95b1dcb6",
                 "resourcePath": "sprites\\spr_next_area\\spr_next_area.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fc325bae-2956-4109-a1a3-acf262437492",
+            "Value": {
+                "id": "44b1d226-ab4d-4a47-ae7e-16b64d63baed",
+                "resourcePath": "rooms\\room_cutscene\\room_cutscene.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
