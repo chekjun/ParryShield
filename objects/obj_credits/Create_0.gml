@@ -1,7 +1,14 @@
+// Remove everything else
 instance_deactivate_all(true);
-index = 0;
+
+// Change tracks
+audio_stop_all();
+audio_play_sound(4, 1, false);
+
 x = (room_width / 2);
 y = (room_height / 2);
+
+index = 0;
 text_alpha = 0.01;
 title = " ";
 sub1 = " ";
@@ -14,7 +21,7 @@ line0[2] = "Artist";
 line0[3] = "Coder";
 line0[4] = "Quality Assurance";
 line0[5] = "Designers";
-line0[6] = "Sound Engineers";
+line0[6] = "Sound Engineer";
 line0[7] = "Producer";
 line0[8] = "Additional Credits To";
 line0[9] = " ";
@@ -49,9 +56,8 @@ line2[9] = " ";
 line2[10] = " ";
 line2[11] = " ";
 
-audio_play_sound(4, 1, false);
+
 
 timer = 120;
 // appear/disappear/stay
 ads = 1;
-

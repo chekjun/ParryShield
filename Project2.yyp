@@ -175,14 +175,6 @@
             }
         },
         {
-            "Key": "1be2ebd3-ada4-4e3f-81f0-7bcfccb2bba1",
-            "Value": {
-                "id": "0dcde5d4-58ef-4ec5-bb66-2b4abd56ee8f",
-                "resourcePath": "objects\\obj_enemy_spawner\\obj_enemy_spawner.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1e7deeef-3e1e-48c5-9cd3-8342b9427d17",
             "Value": {
                 "id": "097b0012-6992-42d4-9e59-cffd43d07e79",
@@ -436,6 +428,14 @@
                 "id": "a77019f1-c7e8-469a-b543-db004865c065",
                 "resourcePath": "sounds\\bgm_credits\\bgm_credits.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "5b9c1ea0-0ca4-4345-8c64-c29b477bdc75",
+            "Value": {
+                "id": "8a635452-d742-40bf-ad38-f838d9206f98",
+                "resourcePath": "sprites\\spr_cursor\\spr_cursor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

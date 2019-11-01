@@ -1,5 +1,4 @@
 if(keyboard_check_pressed(vk_anykey)) {
-	audio_stop_all();
 	game_restart();
 }
 
@@ -9,7 +8,6 @@ if(timer <= 0) {
 		ads = 1;
 	} else if(ads == 1) {	// Make Appear
 		if(index == 11) {
-			audio_stop_all();
 			game_restart();
 		}
 		var i = index;
@@ -24,7 +22,6 @@ if(timer <= 0) {
 		ads = 2;
 	}
 }
-
 
 if(timer >= 0) {
 	if(ads == 1){

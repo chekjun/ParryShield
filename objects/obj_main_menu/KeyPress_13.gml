@@ -1,8 +1,6 @@
-audio_play_sound(snd_menu_select, 1, false);
-
-if (help) {
+if help {
 	with(obj_main_menu) {
-		visible = true;	
+		visible = true;
 	}
 	with (obj_title_text) {
 		visible = true;
@@ -15,10 +13,12 @@ if (help) {
 	}
 	help = false;
 } else {
+	audio_play_sound(snd_menu_select, 1, false);
 	switch (menu_index) {
 	
 		// Play
 		case 0:
+			cursor_sprite = spr_cursor;
 			room_goto_next();
 		break;
 	
