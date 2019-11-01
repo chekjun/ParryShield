@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "739e22a2-aac8-47c6-ab88-929ece4cf61a",
+            "Value": {
+                "id": "017469ad-0e4f-4837-bb06-3234ae48afa8",
+                "resourcePath": "sprites\\spr_parry_indicator\\spr_parry_indicator.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "750b1b3c-aff1-4ed7-8dfe-1712b726ff06",
             "Value": {
                 "id": "9434a651-95e8-4710-bd8c-6fe186ceaa06",
@@ -580,6 +588,14 @@
                 "id": "c1d3998a-04a9-48ea-b199-bef3410a7384",
                 "resourcePath": "sprites\\spr_delta_shoot_right\\spr_delta_shoot_right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7754790a-b153-44be-a18c-f21b5b51f72a",
+            "Value": {
+                "id": "b8f9de92-08bf-4a4a-afbc-fc0fc06378d0",
+                "resourcePath": "objects\\obj_parry_indicator\\obj_parry_indicator.yy",
+                "resourceType": "GMObject"
             }
         },
         {

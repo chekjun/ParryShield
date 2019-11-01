@@ -6,7 +6,8 @@
     "children": [
         "505548b4-6ddf-4e78-99af-1fbc23832a13",
         "bbbe8948-b5bf-45f9-8048-769b49cdc740",
-        "1ee279c8-2e59-4c8b-ad1c-1558b57496cb"
+        "1ee279c8-2e59-4c8b-ad1c-1558b57496cb",
+        "739e22a2-aac8-47c6-ab88-929ece4cf61a"
     ],
     "filterType": "GMSprite",
     "folderName": "hitbox",
