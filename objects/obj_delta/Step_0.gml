@@ -131,6 +131,7 @@ switch state {
 	
 	case PlayerStates.SHOOT:
 		scr_shoot_anim();
+		obj_game_controller.bulletTimeDurationTimer = 2;
 		--chargingDurationTimer;	
 		show_debug_message(chargingDurationTimer);
 		if(chargingDurationTimer == 0) {
