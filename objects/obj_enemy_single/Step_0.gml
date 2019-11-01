@@ -14,9 +14,7 @@ switch state {
 		if (detectCooldownTimer <= 0) {
 			state = PlayerStates.WALK;
 		}
-		if (!collision_line(x, y, obj_delta.x, obj_delta.y, obj_wall, true, true)
-				and distance_to_object(obj_delta) <= detectionRange
-				and detectCooldownTimer > 0) {
+		if (point_in_rectangle(x, y, view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0]) and detectCooldownTimer > 0) {
 			--detectCooldownTimer;
 		} else if (detectCooldownTimer < detectCooldown) {
 			++detectCooldownTimer;

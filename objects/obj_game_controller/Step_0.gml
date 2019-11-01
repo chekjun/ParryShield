@@ -1,18 +1,3 @@
-if (isPaused) {
-	if (keyboard_check_pressed(vk_escape)) {
-		isPaused = false;
-		instance_activate_all();
-	} else {
-		exit;
-	}
-} else {
-	if (keyboard_check_pressed(vk_escape)) {
-		isPaused = true;
-		instance_deactivate_all(true);
-		exit;
-	}
-}
-
 player = obj_delta;
 
 if (player.state == PlayerStates.DEAD and keyboard_check_pressed(ord("R"))) {
