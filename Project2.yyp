@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "3fb20011-7f94-4215-b72e-c26b216a76a3",
+            "Value": {
+                "id": "3d98390f-99ec-44bc-9874-ffee6a302116",
+                "resourcePath": "tilesets\\tile_grass\\tile_grass.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "416e1e4b-494b-4478-822f-e5c244f693fb",
             "Value": {
                 "id": "0cbaa501-f51f-4e93-aaf6-5ce8809d6aa4",
