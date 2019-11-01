@@ -1,3 +1,4 @@
+audio_play_sound(snd_menu_select, 1, false);
 if help {
 	with(obj_main_menu) {
 		visible = true;
@@ -13,7 +14,7 @@ if help {
 	}
 	help = false;
 } else {
-	audio_play_sound(snd_menu_select, 1, false);
+
 	switch (menu_index) {
 	
 		// Play

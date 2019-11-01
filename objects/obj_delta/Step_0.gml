@@ -1,8 +1,6 @@
 scr_cooldown();
 scr_get_player_input();
 
-if (parryCooldownTimer == 12) instance_create_depth(x, y + 10, -bbox_bottom - 10, obj_effect_spark);
-
 switch state {
 	case PlayerStates.DEAD:
 		sprite_index = spr_delta_idle_down;
@@ -141,7 +139,6 @@ switch state {
 		if (shootDurationTimer > 0) {
 			--shootDurationTimer;
 		} else {
-			show_debug_message("yeet");
 			state = PlayerStates.IDLE;
 		}
 	break;

@@ -18,3 +18,5 @@ if (place_meeting(x, y + vspd, obj_wall)) {
 }
 x = x + hspd;
 y = y + vspd;
+x = clamp(x, 0, room_width);
+y = clamp(y, 0, room_height);

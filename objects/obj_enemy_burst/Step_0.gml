@@ -10,35 +10,40 @@ if (shootDurationTimer > 0 and obj_game_controller.bulletTimeDurationTimer <= 0)
 
 switch state {
 	case EnemyStates.DEAD:
+		speed = 0;
 		mask_index = spr_enemy_dead_hitbox;
 		sprite_index = spr_enemy_dead;
 		exit;
 	break;
 	
 	case EnemyStates.IDLE:
+		speed = 0;
 		if (detectCooldownTimer <= 0) {
-			state = PlayerStates.WALK;
-		}
-		if (!collision_line(x, y, obj_delta.x, obj_delta.y, obj_wall, true, true)
-			and distance_to_object(obj_delta) <= detectionRange
-			and detectCooldownTimer > 0) {
-			--detectCooldownTimer;
-		} else if (detectCooldownTimer < detectCooldown) {
-			++detectCooldownTimer;
+			if (shootCooldownTimer <= 0) {
+				state = EnemyStates.ATTACK;
+			} else {
+				state = EnemyStates.WALK;
+			}
+		} else {
+			var camera = view_camera[0];
+			if (point_in_rectangle(x, y,
+					camera_get_view_x(camera) + 16,
+					camera_get_view_y(camera) + 16,
+					camera_get_view_x(camera) + camera_get_view_width(camera) - 16,
+					camera_get_view_y(camera) + camera_get_view_height(camera) - 16)) {
+				--detectCooldownTimer
+			}
 		}
 	break;
 	
 	case EnemyStates.WALK:
-		if (abs(obj_delta.x - x) > (chaseRangeLimit) or abs(obj_delta.y - y) > (chaseRangeLimit) or health <= 0) {
-			speed = 0;
-			state = EnemyStates.IDLE;
-		} else if (distance_to_object(obj_delta) > advanceRange) {
-			move_towards_point(obj_delta.x, obj_delta.y, 0.5);
-		} else {
-			if (shootCooldownTimer <= 0) {
-				speed = 0;
+		if (shootCooldownTimer <= 0) {
 				state = EnemyStates.ATTACK;
-			}
+		} else if (obj_game_controller.bulletTimeDurationTimer > 0) {
+				state = EnemyStates.IDLE;
+		} else if (distance_to_object(obj_delta) > shootRange) {
+			direction = point_direction(x, y, obj_delta.x, obj_delta.y) + random_range(-25, 25);
+			speed = 0.75;
 		}
 	break;
 	
@@ -55,13 +60,12 @@ switch state {
 		}
 		
 		if (burstCounter == 0) {
-			state = EnemyStates.WALK;
+			state = EnemyStates.IDLE;
 		}
 
 	break;
 }
 
 if (HP <= 0) {
-	speed = 0;
 	state = EnemyStates.DEAD;
 }
