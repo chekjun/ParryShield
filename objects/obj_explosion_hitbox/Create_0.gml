@@ -1,2 +1,2 @@
-damage = 99;
+damage = 100;
 alarm[0] = 2;

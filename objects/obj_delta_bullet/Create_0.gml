@@ -1,5 +1,3 @@
-damage = 8;
-
 image_angle = point_direction(x, y, mouse_x, mouse_y);
 var vectX = mouse_x - x;
 var vectY = mouse_y - y;

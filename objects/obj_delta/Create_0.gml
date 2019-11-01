@@ -18,7 +18,7 @@ parryCooldown = 75;
 
 invulnerableDuration = 30;
 rollDuration = 30;
-shootDuration = 60;
+shootDuration = 30;
 parryDuration = 15;
 
 chargingDuration = 30;
