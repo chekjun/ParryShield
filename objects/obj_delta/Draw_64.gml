@@ -28,28 +28,28 @@ if (health == 0) {
 var energyX = 50;
 var energyY = 600;
 
-if (energy <= 0) {
-	draw_sprite_part(spr_energy_bar, 0, 0, 0, 256, 32, energyX, energyY);
-} else if (energy <= 10) {
-	draw_sprite_part(spr_energy_bar, 1, 0, 0, 256, 32, energyX, energyY);
-} else if (energy <= 20) {
-	draw_sprite_part(spr_energy_bar, 2, 0, 0, 256, 32, energyX, energyY);
-} else if (energy <= 30) {
-	draw_sprite_part(spr_energy_bar, 3, 0, 0, 256, 32, energyX, energyY);
-} else if (energy <= 40) {
-	draw_sprite_part(spr_energy_bar, 4, 0, 0, 256, 32, energyX, energyY);
-} else if (energy <= 50) {
-	draw_sprite_part(spr_energy_bar, 5, 0, 0, 256, 32, energyX, energyY);
-} else if (energy <= 60) {
-	draw_sprite_part(spr_energy_bar, 6, 0, 0, 256, 32, energyX, energyY);
-} else if (energy <= 70) {
-	draw_sprite_part(spr_energy_bar, 7, 0, 0, 256, 32, energyX, energyY);
-} else if (energy <= 80) {
-	draw_sprite_part(spr_energy_bar, 8, 0, 0, 256, 32, energyX, energyY);
-} else if (energy <= 90) {
-	draw_sprite_part(spr_energy_bar, 9, 0, 0, 256, 32, energyX, energyY);
+if (energy <= 9) {
+	draw_sprite_part(spr_energy_bar, 0, 0, 0, 256, 64, energyX, energyY);
+} else if (energy <= 19) {
+	draw_sprite_part(spr_energy_bar, 1, 0, 0, 256, 64, energyX, energyY);
+} else if (energy <= 29) {
+	draw_sprite_part(spr_energy_bar, 2, 0, 0, 256, 64, energyX, energyY);
+} else if (energy <= 39) {
+	draw_sprite_part(spr_energy_bar, 3, 0, 0, 256, 64, energyX, energyY);
+} else if (energy <= 49) {
+	draw_sprite_part(spr_energy_bar, 4, 0, 0, 256, 64, energyX, energyY);
+} else if (energy <= 59) {
+	draw_sprite_part(spr_energy_bar, 5, 0, 0, 256, 64, energyX, energyY);
+} else if (energy <= 69) {
+	draw_sprite_part(spr_energy_bar, 6, 0, 0, 256, 64, energyX, energyY);
+} else if (energy <= 79) {
+	draw_sprite_part(spr_energy_bar, 7, 0, 0, 256, 64, energyX, energyY);
+} else if (energy <= 89) {
+	draw_sprite_part(spr_energy_bar, 8, 0, 0, 256, 64, energyX, energyY);
+} else if (energy <= 99) {
+	draw_sprite_part(spr_energy_bar, 9, 0, 0, 256, 64, energyX, energyY);
 } else {
-	draw_sprite_part(spr_energy_bar, 10, 0, 0, 256, 32, energyX, energyY);
+	draw_sprite_part(spr_energy_bar_full, image_index, 0, 0, 256, 64, energyX, energyY);
 }
 
 ///get camera coords

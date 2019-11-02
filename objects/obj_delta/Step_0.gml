@@ -83,12 +83,12 @@ switch state {
 		}
 		
 		// Walk to Shoot
-		if (key_shoot and shootCooldownTimer <= 0 and energy >= 50) {
+		if (key_shoot and shootCooldownTimer <= 0 and energy >= 100) {
 			show_debug_message("Shoot Triggered!");
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
 			chargingDurationTimer = chargingDuration;
-			energy = energy - 50;
+			energy = energy - 100;
 			scr_look_at_mouse();
 			audio_stop_sound(snd_step_grass);
 			state = PlayerStates.SHOOT;

@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "be46b004-eb3d-4af6-aa67-066838683e84",
+            "Value": {
+                "id": "dd0702ed-e5e1-4245-b0e2-a262b8277f74",
+                "resourcePath": "sprites\\spr_energy_bar_full\\spr_energy_bar_full.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c1fc9b01-aac4-4343-80d4-855d70037d46",
             "Value": {
                 "id": "a0a4e7e0-9553-4ecf-8a74-f40b00bfecfb",
