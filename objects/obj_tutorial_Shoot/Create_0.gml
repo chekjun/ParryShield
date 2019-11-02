@@ -1,0 +1,1 @@
+shootText = "Left-Click to shoot\nyour ultimate when\nyour EP bar is full!";

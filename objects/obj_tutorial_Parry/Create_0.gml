@@ -1,0 +1,1 @@
+parryText = "Right-Click to parry\nthe enemy's attacks!\nYou gain EP when you parry!";

@@ -1,0 +1,1 @@
+walkText = "Press WASD to move!";
