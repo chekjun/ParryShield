@@ -5,30 +5,60 @@ if (shootCooldownTimer > 0 and obj_game_controller.bulletTimeDurationTimer <= 0)
 
 switch state {
 	case EnemyStates.DEAD:
+		speed = 0;
 		mask_index = spr_enemy_dead_hitbox;
 		sprite_index = spr_enemy_dead;
 		exit;
 	break;
 	
 	case EnemyStates.IDLE:
-	
+		speed = 0;
+		if (detectCooldownTimer <= 0) {
+			if (shootCooldownTimer <= 0) {
+				state = EnemyStates.ATTACK;
+			} else {
+				state = EnemyStates.WALK;
+			}
+		} else {
+			var camera = view_camera[0];
+			if (point_in_rectangle(x, y,
+					camera_get_view_x(camera) + 16,
+					camera_get_view_y(camera) + 16,
+					camera_get_view_x(camera) + camera_get_view_width(camera) - 16,
+					camera_get_view_y(camera) + camera_get_view_height(camera) - 16)) {
+				--detectCooldownTimer
+			}
+		}
 	break;
 	
 	case EnemyStates.WALK:
-	
+		if (shootCooldownTimer <= 0) {
+				state = EnemyStates.ATTACK;
+		} else if (obj_game_controller.bulletTimeDurationTimer > 0) {
+				state = EnemyStates.IDLE;
+		} else if (distance_to_object(obj_delta) > shootRange) {
+			direction = point_direction(x, y, obj_delta.x, obj_delta.y) + random_range(-25, 25);
+			speed = 0.75;
+		}
 	break;
 	
 	case EnemyStates.ATTACK:
-		for (i = 0; i < 8; ++i) {
-			var tempDir = 0 + 45 * i
-			var bullet = instance_create_depth(x, y, depth, obj_enemy_bullet);
-			bullet.direction = tempDir;
+		speed = 0;
+		for (i = 0; i < 8 ; ++i) {
+			if (random(20) <= 0.99) {
+				var bullet = instance_create_depth(x, y, depth, obj_heal_bullet);
+			} else {
+				var bullet = instance_create_depth(x, y, depth, obj_enemy_bullet);
+			}
+				bullet.direction += i * 45;
+				bullet.speed = 3;
 		}
 		shootCooldownTimer = shootCooldown;
+		state = EnemyStates.IDLE;
 	break;
 }
 
 if (HP <= 0) {
-	speed = 0;
+	instance_destroy();
 	state = EnemyStates.DEAD;
 }

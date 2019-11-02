@@ -67,5 +67,6 @@ switch state {
 }
 
 if (HP <= 0) {
+	instance_destroy();
 	state = EnemyStates.DEAD;
 }

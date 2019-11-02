@@ -44,12 +44,17 @@ switch state {
 	
 	case EnemyStates.ATTACK:
 		speed = 0;
-		instance_create_depth(x, y, depth, obj_enemy_bullet);
+		if (random(20) <= 0.99) {
+			instance_create_depth(x, y, depth, obj_heal_bullet);
+		} else {
+			instance_create_depth(x, y, depth, obj_enemy_bullet);	
+		}
 		shootCooldownTimer = shootCooldown;
 		state = EnemyStates.IDLE;
 	break;
 }
 
 if (HP <= 0) {
+	instance_destroy();
 	state = EnemyStates.DEAD;
 }
