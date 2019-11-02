@@ -17,7 +17,7 @@ invulnerableDuration = 45;
 rollDuration = 30;
 shootDuration = 60;
 chargingDuration = 30;
-parryDuration = 20;
+parryDuration = 15;
 
 // Timer
 invulnerableCooldownTimer = 0;
@@ -32,8 +32,3 @@ chargingDurationTimer = 0.0;
 parryDurationTimer = 0;
 
 audio_play_sound(bgm_loop, 1, true);
-
-blink = false;
-blink_number_of_blinks = 3;
-blink_counter = 0;
-blink_duration = 15;

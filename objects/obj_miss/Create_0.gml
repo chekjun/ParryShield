@@ -1,1 +1,1 @@
-duration = 10;
+duration = 15;

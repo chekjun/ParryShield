@@ -1,2 +1,2 @@
-currentShotCooldown = 10;
-shotCooldown = 10;
+shootCooldown = 10;
+shootCooldownTimer = 0;

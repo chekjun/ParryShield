@@ -1,10 +1,10 @@
-if(currentShotCooldown <= 0) {
-	instance_create_depth(x, y, depth, obj_tutorial_bullet_beam);
-	obj_tutorial_bullet_beam.direction = 180;
-	currentShotCooldown = shotCooldown;
+if(shootCooldownTimer > 0 and obj_game_controller.bulletTimeDurationTimer <= 0) {
+	--shootCooldownTimer;	
 }
 
-if(currentShotCooldown > 0) {
-	currentShotCooldown--;	
+if (shootCooldownTimer <= 0) {
+	var bullet = instance_create_depth(x, y, depth, obj_tutorial_bullet_beam);
+	bullet.direction = 180;
+	bullet.speed = 3.5;
+	shootCooldownTimer = shootCooldown;
 }
-
