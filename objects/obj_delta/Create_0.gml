@@ -7,16 +7,13 @@ moveSpeed = 2;
 state = PlayerStates.IDLE;
 facing = PlayerDirections.DOWN;
 
-// Boolean
-isInvulnerable = false;
-
 // Cooldown
-invulnerableCooldown = 60;
+invulnerableCooldown = 90;
 rollCooldown = 90;
 shootCooldown = 60;
 parryCooldown = 75;
 
-invulnerableDuration = 30;
+invulnerableDuration = 45;
 rollDuration = 30;
 shootDuration = 60;
 chargingDuration = 30;
@@ -35,3 +32,8 @@ chargingDurationTimer = 0.0;
 parryDurationTimer = 0;
 
 audio_play_sound(bgm_loop, 1, true);
+
+blink = false;
+blink_number_of_blinks = 3;
+blink_counter = 0;
+blink_duration = 15;

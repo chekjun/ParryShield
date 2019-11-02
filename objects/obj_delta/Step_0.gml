@@ -1,6 +1,13 @@
 scr_cooldown();
 scr_get_player_input();
 
+if (invulnerableCooldownTimer > 0) {
+	--invulnerableCooldownTimer;
+}
+if (invulnerableDurationTimer > 0) {
+	--invulnerableDurationTimer;
+}
+
 switch state {
 	case PlayerStates.DEAD:
 		sprite_index = spr_delta_idle_down;
@@ -27,7 +34,6 @@ switch state {
 		// Idle to Shoot
 		if (key_shoot and shootCooldownTimer <= 0 and energy >= 100) {
 			show_debug_message("Shoot Triggered!");
-			// instance_create_depth(x, y, depth, obj_delta_bullet);
 			shootCooldownTimer = shootCooldown;
 			shootDurationTimer = shootDuration;
 			chargingDurationTimer = chargingDuration;
