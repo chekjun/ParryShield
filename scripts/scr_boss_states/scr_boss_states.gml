@@ -1,0 +1,7 @@
+enum BossStates {
+	DEAD,
+	QUARTER,
+	HALF,
+	THREE_QUARTER,
+	FULL
+}

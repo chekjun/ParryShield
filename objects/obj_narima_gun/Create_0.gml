@@ -1,0 +1,1 @@
+chargingDuration = 60;
