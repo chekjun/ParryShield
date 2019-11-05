@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "55270423-44ea-4bd9-89a6-56f725e6fcb7",
+            "Value": {
+                "id": "564fd079-2823-4e59-a030-e67b0f415fb1",
+                "resourcePath": "sprites\\spr_narima_hp_bar\\spr_narima_hp_bar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "567d0d6b-c10e-4812-abaa-8173c254a948",
             "Value": {
                 "id": "4305e148-f0de-403b-be8d-6e4a4bcca96f",
@@ -1012,6 +1020,14 @@
                 "id": "2421392c-cd1a-4045-89be-eed77bbe85af",
                 "resourcePath": "objects\\obj_tutorial_bullet_beam\\obj_tutorial_bullet_beam.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a23b96d4-d527-49f7-a720-3ea3795768b0",
+            "Value": {
+                "id": "535f25f9-f2a3-4ed0-b7c8-641f4bf8eb85",
+                "resourcePath": "sprites\\spr_narima_hp_meter\\spr_narima_hp_meter.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

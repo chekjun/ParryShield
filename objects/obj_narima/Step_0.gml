@@ -16,11 +16,13 @@ switch state {
 		} else {
 			--y;
 		}
+		HP = 0;
 		exit;
 	break;
 	
 	case BossStates.QUARTER:
 		if (HP <= 0) {
+			HP = 0;
 			state = BossStates.DEAD;
 		}
 	break;
