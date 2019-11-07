@@ -1327,6 +1327,14 @@
             }
         },
         {
+            "Key": "c3658985-7b82-4f6f-8a53-94218e6fa391",
+            "Value": {
+                "id": "e1606ad8-6ec8-43f8-a020-0344f7cf01eb",
+                "resourcePath": "objects\\obj_tutorial_Parry1\\obj_tutorial_Parry1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c75494e8-9ded-4025-90e6-70f80b159aeb",
             "Value": {
                 "id": "ac6cfaa1-6e9f-4f71-93ab-be98484e0229",
