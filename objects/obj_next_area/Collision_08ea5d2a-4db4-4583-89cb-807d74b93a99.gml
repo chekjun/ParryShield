@@ -9,6 +9,11 @@ with (obj_enemy_burst) {
 		cleared = false;
 	}
 }
+with (obj_enemy_shotgun) {
+	if (state != EnemyStates.DEAD) {
+		cleared = false;
+	}
+}
 with (obj_enemy_fan) {
 	if (state != EnemyStates.DEAD) {
 		cleared = false;
