@@ -1,3 +1,7 @@
+if (bulletTimeCooldownTimer > 0) {
+	--bulletTimeCooldownTimer;
+}
+
 if (bulletTimeDurationTimer > 0) {
 	--bulletTimeDurationTimer;
 }
@@ -25,16 +29,7 @@ if (obj_delta.state == PlayerStates.DEAD) {
 	instance_create_depth(obj_respawn_point.x, obj_respawn_point.y, depth, obj_delta);
 }
 
-/*
-if (bulletTimeCooldownTimer > 0) {
-	--bulletTimeCooldownTimer;
-}
-*/
-
-
-
-/*
-else {
-	isBulletTime = false;
-}
-*/
+globalvar grid;
+grid = mp_grid_create(0, 0, room_width div 48, room_height div 48, 48, 48);
+mp_grid_add_instances(grid, obj_wall, false);
+mp_grid_add_instances(grid, obj_tree, false);
