@@ -10,3 +10,4 @@ shootCooldownTimer = 0;
 
 state = EnemyStates.IDLE;
 facing = EnemyDirection.DOWN;
+direction = 270;

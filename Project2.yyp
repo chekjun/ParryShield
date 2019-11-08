@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "499d246e-7b03-4f6e-90ed-2de97d7fda7c",
+            "Value": {
+                "id": "fb2d5fa5-fa52-41c7-bbec-76c8c114118d",
+                "resourcePath": "sprites\\spr_enemy_shotgun_up\\spr_enemy_shotgun_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4b483f16-0ee4-4d84-a5f0-f27d13847eec",
             "Value": {
                 "id": "564987ab-8d1e-4383-8927-3df7810d85ca",
@@ -487,6 +495,14 @@
             }
         },
         {
+            "Key": "4eabb34c-fd0f-4bf1-9769-897d7179f992",
+            "Value": {
+                "id": "ec253ca3-b427-44c7-8e0b-a1fcaf4e0d13",
+                "resourcePath": "sprites\\spr_enemy_shotgun_left\\spr_enemy_shotgun_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "505548b4-6ddf-4e78-99af-1fbc23832a13",
             "Value": {
                 "id": "479e3640-5451-407a-80e5-172e539b7b43",
@@ -500,6 +516,14 @@
                 "id": "2c2d7511-242c-4b85-9edf-7657caa3e5ff",
                 "resourcePath": "views\\50f5f211-19db-4dc3-b932-722a734b7e90.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "527dde93-36c7-4b37-bbf3-a63d0a07da9c",
+            "Value": {
+                "id": "31841dfb-95a9-477e-b919-e2b61eba4f1f",
+                "resourcePath": "sprites\\spr_enemy_shotgun_down\\spr_enemy_shotgun_down.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -644,6 +668,14 @@
                 "id": "f03088a5-b6b7-46da-ba1e-7ba626391e95",
                 "resourcePath": "views\\66f120de-e59a-40bf-9469-c5c954eeb771.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "692453f1-d96e-4172-a051-b7d221c99e48",
+            "Value": {
+                "id": "c31e436f-908d-4030-83f0-70b541ac6a3b",
+                "resourcePath": "scripts\\scr_enemy_anim\\scr_enemy_anim.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1471,11 +1503,27 @@
             }
         },
         {
+            "Key": "e6f60515-4ed4-4a7d-ae7a-2f509342f4a7",
+            "Value": {
+                "id": "3ce73acb-a3e2-41ff-b4ab-9968064f6f5a",
+                "resourcePath": "views\\e6f60515-4ed4-4a7d-ae7a-2f509342f4a7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "e77cd2bd-67e1-4599-85d4-af2a72fca51c",
             "Value": {
                 "id": "19af3bf2-2bde-4ac7-b9f1-f6132d934fd6",
                 "resourcePath": "views\\e77cd2bd-67e1-4599-85d4-af2a72fca51c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e7d7cc1f-e474-4a18-afd3-b97eb653d873",
+            "Value": {
+                "id": "99057ef3-b3f4-471a-a279-a9c8c199b394",
+                "resourcePath": "sprites\\spr_enemy_shotgun_right\\spr_enemy_shotgun_right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1619,6 +1667,7 @@
         "9a05c83d-16ef-4d38-8190-a3d76173dbfc",
         "8d9b389d-9343-4c78-8937-5e4830b2c12c",
         "836fff54-362b-4f06-9856-a45f295e68c5",
+        "692453f1-d96e-4172-a051-b7d221c99e48",
         "10df8bfa-d016-4747-97d0-2d8cfe682dd0"
     ],
     "tutorial": ""

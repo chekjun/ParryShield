@@ -1,1 +1,1 @@
-walkText = "Press WASD to move!";
+walkText = "Use WASD to move!";

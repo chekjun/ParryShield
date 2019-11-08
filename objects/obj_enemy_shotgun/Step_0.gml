@@ -5,14 +5,14 @@ if (shootCooldownTimer > 0 and obj_game_controller.bulletTimeDurationTimer <= 0)
 
 switch state {
 	case EnemyStates.DEAD:
-		speed = 0;
-		mask_index = spr_enemy_dead_hitbox;
-		sprite_index = spr_enemy_dead;
+		instance_destroy();
 		exit;
 	break;
 	
 	case EnemyStates.IDLE:
 		speed = 0;
+		image_index = 0;
+		image_speed = 0;
 		if (detectCooldownTimer <= 0) {
 			if (shootCooldownTimer <= 0) {
 				state = EnemyStates.ATTACK;
@@ -32,6 +32,7 @@ switch state {
 	break;
 	
 	case EnemyStates.WALK:
+		image_speed = 1;
 		if (shootCooldownTimer <= 0) {
 				state = EnemyStates.ATTACK;
 		} else if (obj_game_controller.bulletTimeDurationTimer > 0) {
@@ -43,7 +44,6 @@ switch state {
 	break;
 	
 	case EnemyStates.ATTACK:
-		speed = 0;
 		instance_create_depth(x, y, depth, obj_enemy_bullet);
 		rightBullet = instance_create_depth(x, y, depth, obj_enemy_bullet);
 		rightBullet.direction = rightBullet.direction - 15;

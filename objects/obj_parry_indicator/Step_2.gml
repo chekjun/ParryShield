@@ -1,6 +1,6 @@
 var player = obj_delta;
 
-if (player.parryCooldownTimer == 0 and player.state != PlayerStates.DEAD) {
+if (player.parryCooldownTimer == 0 and player.rollDurationTimer <= 0 and player.state != PlayerStates.DEAD) {
 	visible = true;
 } else {
 	visible = false;
