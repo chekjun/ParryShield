@@ -7,7 +7,6 @@ if (bulletTimeDurationTimer > 0) {
 }
 
 if (obj_delta.state == PlayerStates.DEAD) {
-
 	with (obj_enemy_single) {
 		state = EnemyStates.IDLE;
 		detectCooldownTimer = detectCooldown;
@@ -24,7 +23,9 @@ if (obj_delta.state == PlayerStates.DEAD) {
 		state = EnemyStates.IDLE;
 		detectCooldownTimer = detectCooldown;
 	}
-
+	with (obj_enemy_bullet) {
+		instance_destroy();
+	}
 	instance_destroy(obj_delta);
 	instance_create_depth(obj_respawn_point.x, obj_respawn_point.y, depth, obj_delta);
 }

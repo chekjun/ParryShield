@@ -8,4 +8,3 @@ if (obj_game_controller.bulletTimeCooldownTimer == 0) {
 	obj_game_controller.bulletTimeDurationTimer = obj_game_controller.bulletTimeDuration;
 }
 instance_destroy();
-
