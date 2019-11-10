@@ -10,7 +10,7 @@ detectCooldownTimer = detectCooldown;
 shootCooldownTimer = 0;
 shootDurationTimer = 0;
 
-changePathCooldown = 15;
+changePathCooldown = 10;
 changePathCooldownDuration = 0;
 
 state = EnemyStates.IDLE;
