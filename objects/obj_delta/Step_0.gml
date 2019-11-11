@@ -1,13 +1,6 @@
 scr_cooldown();
 scr_get_player_input();
 
-if (invulnerableCooldownTimer > 0) {
-	--invulnerableCooldownTimer;
-}
-if (invulnerableDurationTimer > 0) {
-	--invulnerableDurationTimer;
-}
-
 switch state {
 	case PlayerStates.DEAD:
 		sprite_index = spr_delta_idle_down;
