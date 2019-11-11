@@ -31,6 +31,7 @@ if (obj_delta.state == PlayerStates.DEAD) {
 }
 
 globalvar grid;
-grid = mp_grid_create(0, 0, room_width div 48, room_height div 48, 48, 48);
+grid = mp_grid_create(0, 0, room_width div 32, room_height div 32, 32, 32);
+mp_grid_add_instances(grid, obj_log, false);
+// mp_grid_add_instances(grid, obj_tree, false);
 mp_grid_add_instances(grid, obj_wall, false);
-mp_grid_add_instances(grid, obj_tree, false);

@@ -1,1 +1,1 @@
-draw_sprite(spr_room_clear, 0, x, y);
+draw_sprite(spr_room_clear, 0, cx, cy);
