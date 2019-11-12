@@ -906,7 +906,7 @@
             "Key": "7ec1c6e2-288e-4064-a695-d276e79e6fec",
             "Value": {
                 "id": "a1e262b9-439d-4d8a-8b94-e0866356b682",
-                "resourcePath": "objects\\obj_pausemenu\\obj_pausemenu.yy",
+                "resourcePath": "objects\\obj_pause_help\\obj_pause_help.yy",
                 "resourceType": "GMObject"
             }
         },
