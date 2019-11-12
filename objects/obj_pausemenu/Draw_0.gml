@@ -1,11 +1,6 @@
 var i = 0;
 repeat (buttons) {
-	/*
-	var cx = camera_get_view_x(view_camera[0]);
-	var cy = camera_get_view_y(view_camera[0]);
-	draw_sprite(spr_pause_help, 0, cx + 320, cy + 180);
-	*/
-	
+	depth = 0;
 	draw_set_alpha(1);
 	draw_set_font(font_main_menu);
 	draw_set_halign(fa_middle);

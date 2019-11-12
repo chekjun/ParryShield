@@ -1,3 +1,5 @@
+cy = surface_get_height(application_surface) / 2;
+
 if (obj_next_area.cleared) {
 	if (cx >= surface_get_width(application_surface) / 2) {
 		cx = cx - 10;
