@@ -52,8 +52,8 @@ switch state {
 
 }
 
-var randX = random_range(50, 590);
-var randY = random_range(16, 64);
+var randX = random_range(70, 570);
+var randY = random_range(20, 44);
 instance_create_depth(randX, randY, depth, obj_narima_gun);
 
 shootCooldownTimer = shootCooldown;

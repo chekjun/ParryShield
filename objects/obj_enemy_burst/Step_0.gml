@@ -83,7 +83,11 @@ switch state {
 		}
 		
 		if (burstCounter > 0 and shootDurationTimer <= 0) {
-			instance_create_depth(x, y, depth, obj_enemy_bullet);
+			if (random(100) <= 8) {
+				instance_create_depth(x, y, depth, obj_heal_bullet);
+			} else {
+				instance_create_depth(x, y, depth, obj_enemy_bullet);	
+			}
 			--burstCounter;
 			shootDurationTimer = shootDuration;
 		}

@@ -5,7 +5,7 @@ if (!instance_exists(obj_narima) or obj_narima.state = BossStates.DEAD) {
 if (chargingDuration > 0) {
 	--chargingDuration;
 } else {
-	if (random(20) <= 0.99) {
+	if (random(100) <= 8) {
 		var bullet = instance_create_depth(x, y, depth, obj_heal_bullet);
 	} else {
 		var bullet = instance_create_depth(x, y, depth, obj_enemy_bullet);	

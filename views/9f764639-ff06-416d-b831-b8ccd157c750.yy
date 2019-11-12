@@ -7,7 +7,9 @@
         "abf43cb4-3e86-4068-a003-acb5170af594",
         "d759f5c6-b42e-449e-9e07-4b0db6cfca0a",
         "55270423-44ea-4bd9-89a6-56f725e6fcb7",
-        "a23b96d4-d527-49f7-a720-3ea3795768b0"
+        "a23b96d4-d527-49f7-a720-3ea3795768b0",
+        "27e455ee-940b-4394-b995-f877241ce999",
+        "bc7dcc50-a4d4-4025-911f-992721cbe4c1"
     ],
     "filterType": "GMSprite",
     "folderName": "boss",

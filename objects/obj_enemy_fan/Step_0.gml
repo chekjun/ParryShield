@@ -66,8 +66,8 @@ switch state {
 			} else {
 				var bullet = instance_create_depth(x, y, depth, obj_enemy_bullet);
 			}
-				bullet.direction += i * 45;
-				bullet.speed = 3;
+			bullet.direction += i * 45;
+			bullet.speed = 3;
 		}
 		shootCooldownTimer = shootCooldown;
 		state = EnemyStates.WALK;

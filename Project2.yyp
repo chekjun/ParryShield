@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "27e455ee-940b-4394-b995-f877241ce999",
+            "Value": {
+                "id": "1eb1ed76-b901-4545-a4d3-3f27e50a9329",
+                "resourcePath": "sprites\\spr_narima_crosshair\\spr_narima_crosshair.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "28e19332-a788-488f-9d84-367d861ca45e",
             "Value": {
                 "id": "e2e0358b-702d-428f-b097-bd17c79b6e56",
@@ -1403,6 +1411,14 @@
             "Value": {
                 "id": "f35b1798-cda0-4fbb-b91f-8f60542e1a45",
                 "resourcePath": "sprites\\spr_textbox\\spr_textbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bc7dcc50-a4d4-4025-911f-992721cbe4c1",
+            "Value": {
+                "id": "310c70ad-ec8f-4468-ae6f-a7564daeff1e",
+                "resourcePath": "sprites\\spr_narima_explosion\\spr_narima_explosion.yy",
                 "resourceType": "GMSprite"
             }
         },
