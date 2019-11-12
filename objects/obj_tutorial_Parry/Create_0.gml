@@ -1,1 +1,1 @@
-parryText = "Right-Click to parry\nthe enemy's attacks!\nYou gain EP when you parry!";
+parryText = "Right-Click to parry\nthe enemy's attacks!\nAim the parried bullets\nwith your mouse!";

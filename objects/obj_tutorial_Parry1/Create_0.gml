@@ -1,1 +1,1 @@
-parryText = "You can chain each successful parry immediately!\nThe parried bullets will return back to your mouse original position";
+parryText = "You can chain each\nsuccessful parry immediately!";

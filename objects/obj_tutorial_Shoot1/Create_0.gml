@@ -1,0 +1,1 @@
+walkText = "Your shots clears enemies' bullets!";

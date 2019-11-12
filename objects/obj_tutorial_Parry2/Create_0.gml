@@ -1,0 +1,1 @@
+parryText = "Parrying green bullets will\nheal you as well!\nTry getting hit and heal up!";
