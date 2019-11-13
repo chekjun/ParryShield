@@ -7,7 +7,7 @@ if(timer <= 0) {
 		timer = 110;	
 		ads = 1;
 	} else if(ads == 1) {	// Make Appear
-		if(index == 11) {
+		if(index == 13) {
 			game_restart();
 		}
 		var i = index;

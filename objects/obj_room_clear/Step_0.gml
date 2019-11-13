@@ -3,6 +3,7 @@ cy = surface_get_height(application_surface) / 2;
 if (obj_next_area.cleared) {
 	if (room != 1 and victoryNotPlayed) {
 		audio_pause_sound(bgm_loop);
+		audio_pause_sound(bgm_boss);
 		audio_play_sound(bgm_victory, 1, false);
 		victoryNotPlayed = false;
 	}
