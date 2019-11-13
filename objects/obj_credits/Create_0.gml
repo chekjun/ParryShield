@@ -3,7 +3,7 @@ instance_deactivate_all(true);
 
 // Change tracks
 audio_stop_all();
-audio_play_sound(4, 1, false);
+audio_play_sound(bgm_credits, 1, false);
 
 x = (room_width / 2);
 y = (room_height / 2);

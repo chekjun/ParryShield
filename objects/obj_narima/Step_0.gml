@@ -2,6 +2,10 @@ if (obj_game_controller.bulletTimeDurationTimer > 0) {
 	exit;
 }
 
+if (textTimer > 0) {
+	--textTimer;
+}
+
 switch state {
 
 	case BossStates.DEAD:

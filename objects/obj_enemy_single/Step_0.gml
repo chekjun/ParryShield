@@ -65,6 +65,7 @@ switch state {
 		} else {
 			instance_create_depth(x, y, depth, obj_enemy_bullet);	
 		}
+		audio_play_sound(snd_single_shot, 1, false);
 		shootCooldownTimer = shootCooldown;
 		state = EnemyStates.WALK;
 	break;

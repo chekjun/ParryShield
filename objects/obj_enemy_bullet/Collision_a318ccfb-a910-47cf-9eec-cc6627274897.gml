@@ -7,4 +7,5 @@ if (obj_game_controller.bulletTimeCooldownTimer == 0) {
 	obj_game_controller.bulletTimeCooldownTimer = obj_game_controller.bulletTimeCooldown;
 	obj_game_controller.bulletTimeDurationTimer = obj_game_controller.bulletTimeDuration;
 }
+audio_play_sound(snd_parry, 1, false);
 instance_destroy();

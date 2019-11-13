@@ -8,6 +8,9 @@ if(currentShotCooldown == 25) {
 
 if(currentShotCooldown <= 0) {
 	instance_create_depth(x, y, depth, obj_tutorial_bullet);
+	if (scr_in_view()) {
+		audio_play_sound(snd_slime_shoot, 1, false);
+	}
 	sprite_index = spr_slime_idle;
 	currentShotCooldown = shotCooldown;
 }

@@ -61,6 +61,7 @@ switch state {
 		rightBullet.direction = rightBullet.direction - 10;
 		leftBullet = instance_create_depth(x, y, depth, obj_enemy_bullet);
 		leftBullet.direction = leftBullet.direction + 10;
+		audio_play_sound(snd_shotgun_shot, 1, false);
 		shootCooldownTimer = shootCooldown;
 		state = EnemyStates.WALK;
 	break;

@@ -18,3 +18,4 @@ with(obj_help) {
 	visible = false;	
 }
 help = false;
+audio_play_sound(bgm_menu, 1, true);

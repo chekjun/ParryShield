@@ -20,6 +20,7 @@ if help {
 		// Play
 		case 0:
 			cursor_sprite = spr_cursor;
+			audio_stop_sound(bgm_menu);
 			room_goto_next();
 		break;
 	

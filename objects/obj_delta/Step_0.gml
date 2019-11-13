@@ -3,7 +3,6 @@ scr_get_player_input();
 
 switch state {
 	case PlayerStates.DEAD:
-		sprite_index = spr_delta_idle_down;
 	break;
 	
 	case PlayerStates.IDLE:
@@ -20,6 +19,7 @@ switch state {
 				obj_parry
 			);
 			scr_look_at_mouse();
+			audio_play_sound(snd_shield_swing, 1, false);
 			state = PlayerStates.PARRY;
 			break;
 		}
@@ -32,6 +32,7 @@ switch state {
 			chargingDurationTimer = chargingDuration;
 			energy = energy - 100;
 			scr_look_at_mouse();
+			audio_play_sound(snd_delta_charging, 1, false);
 			state = PlayerStates.SHOOT;
 			break;
 		}
@@ -77,6 +78,7 @@ switch state {
 			);
 			scr_look_at_mouse();
 			audio_stop_sound(snd_step_grass);
+			audio_play_sound(snd_shield_swing, 1, false);
 			state = PlayerStates.PARRY;
 			break;
 		}
@@ -90,6 +92,7 @@ switch state {
 			energy = energy - 100;
 			scr_look_at_mouse();
 			audio_stop_sound(snd_step_grass);
+			audio_play_sound(snd_delta_charging, 1, false);
 			state = PlayerStates.SHOOT;
 			break;
 		}
@@ -125,7 +128,7 @@ switch state {
 			state = PlayerStates.IDLE;
 		}
 	break;
-	
+
 	case PlayerStates.SHOOT:
 		scr_shoot_anim();
 		obj_game_controller.bulletTimeDurationTimer = 2;
@@ -133,8 +136,8 @@ switch state {
 		show_debug_message(chargingDurationTimer);
 		if(chargingDurationTimer == 0) {
 			instance_create_depth(x, y, depth, obj_delta_bullet);
+			audio_play_sound(snd_delta_shot, 1, false);
 		}
-		
 		if (shootDurationTimer > 0) {
 			--shootDurationTimer;
 		} else {
@@ -150,6 +153,8 @@ switch state {
 				parryCooldownTimer = parryCooldown;
 				parryDurationTimer = parryDuration;
 				scr_look_at_mouse();
+				audio_stop_sound(snd_shield_swing);
+				audio_play_sound(snd_shield_swing, 1, false);
 				image_index = 0;
 			}
 		} else {
@@ -160,7 +165,12 @@ switch state {
 
 if (health <= 0) {
 	health = 0;
+	sprite_index = spr_delta_idle_down;
+	audio_stop_sound(snd_delta_charging);
+	audio_stop_sound(snd_delta_shot);
+	audio_stop_sound(snd_shield_swing);
 	audio_stop_sound(bgm_loop);
+	audio_stop_sound(bgm_boss);
 	state = PlayerStates.DEAD;
 }
 

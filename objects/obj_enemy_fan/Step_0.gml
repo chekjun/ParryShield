@@ -69,6 +69,7 @@ switch state {
 			bullet.direction += i * 45;
 			bullet.speed = 3;
 		}
+		audio_play_sound(snd_shotgun_shot, 1, false);
 		shootCooldownTimer = shootCooldown;
 		state = EnemyStates.WALK;
 	break;

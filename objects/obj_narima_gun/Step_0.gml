@@ -10,6 +10,7 @@ if (chargingDuration > 0) {
 	} else {
 		var bullet = instance_create_depth(x, y, depth, obj_enemy_bullet);	
 	}
+	audio_play_sound(snd_single_shot, 1, false);
 	bullet.speed = 4;
 	bullet.direction += random_range(-10, 10); 
 	chargingDuration = 999;
