@@ -47,13 +47,13 @@ switch state {
 		}
 
 		if (distance_to_object(obj_delta) <= shootRange) {
-			path_speed = 0.5;
+			path_speed = 0.6;
 			if (shootCooldownTimer <= 0) {
 				state = EnemyStates.ATTACK;
 			}
 			// move_towards_point(obj_delta.x, obj_delta.y, 0.8);
 		} else {
-			path_speed = 1.25;
+			path_speed = 1.3;
 			// move_towards_point(obj_delta.x, obj_delta.y, 1.2);
 		}
 	break;

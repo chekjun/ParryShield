@@ -1,6 +1,6 @@
 // Stats
 HP = 200;
-shootRange = 120;
+shootRange = 130;
 
 detectCooldown = 60;
 shootCooldown = 120;

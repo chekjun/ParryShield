@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "03d6abb8-68c1-4ece-9258-b80c35cab820",
+            "Value": {
+                "id": "b4dd869b-f1df-4a00-97f7-581b4f77f854",
+                "resourcePath": "objects\\obj_narima_explosion_hitbox\\obj_narima_explosion_hitbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0539dfbc-d2dc-4e0e-bd5e-82fcfac7be4f",
             "Value": {
                 "id": "24d16092-5164-4884-b139-646010ae7d39",
@@ -759,6 +767,14 @@
             }
         },
         {
+            "Key": "654fde4f-a689-4b85-b355-a503ce8547f8",
+            "Value": {
+                "id": "59290a88-b6e4-4e22-b13d-00140bbef948",
+                "resourcePath": "sounds\\snd_shield_swing\\snd_shield_swing.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "66f120de-e59a-40bf-9469-c5c954eeb771",
             "Value": {
                 "id": "f03088a5-b6b7-46da-ba1e-7ba626391e95",
@@ -1015,6 +1031,14 @@
             }
         },
         {
+            "Key": "90ec0b58-adc7-4b02-8f25-0d7d125bc471",
+            "Value": {
+                "id": "515a1017-6e24-4f39-9f0a-7bb5e1a8fb4c",
+                "resourcePath": "objects\\obj_narima_explosion\\obj_narima_explosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9198b6b1-6e8a-4a2d-847d-8e9b402e655d",
             "Value": {
                 "id": "a3ef9a09-9a4f-4ff7-9e4a-34e32837ed21",
@@ -1028,6 +1052,14 @@
                 "id": "044be4aa-91de-4a66-a42f-78bef28f7779",
                 "resourcePath": "sprites\\spr_enemy_shotgun\\spr_enemy_shotgun.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "929bc12b-3f7a-47ad-80e4-cf6e074dfa29",
+            "Value": {
+                "id": "2505a98c-d71e-43d3-a98d-9716eb117e30",
+                "resourcePath": "objects\\obj_narima_crosshair\\obj_narima_crosshair.yy",
+                "resourceType": "GMObject"
             }
         },
         {
