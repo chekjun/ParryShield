@@ -11,7 +11,7 @@ QA/Tester: Im Dong Won [A0210553U]
 
 # Controls  
 
-WASD to walk.
-SPACEBAR to roll.
-LEFT_CLICK to shoot.
-RIGHT_CLICK to parry.
+WASD to walk.  
+SPACEBAR to roll.  
+LEFT_CLICK to shoot.  
+RIGHT_CLICK to parry.  
