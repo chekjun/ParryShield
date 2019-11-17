@@ -15,3 +15,9 @@ WASD to walk.
 SPACEBAR to roll.  
 LEFT_CLICK to shoot.  
 RIGHT_CLICK to parry.  
+
+# How to get the game
+
+Go to releases and download project2.zip  
+Extract the contents into a folder and run the .exe  
+Just play!!
